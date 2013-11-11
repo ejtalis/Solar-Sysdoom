@@ -52,6 +52,7 @@ planet=document.getElementById('actionInput').value;
          
  }
         
+    
        
       
            
@@ -67,3 +68,5 @@ function displayPlanet(message)
 document.getElementById('outputDiv').innerHTML=message;  
 
 }
+
+    //Hello Joe
