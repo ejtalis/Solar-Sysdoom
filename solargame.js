@@ -4,36 +4,36 @@ function travelToPlanet(planet)
 
 planet=document.getElementById('actionInput').value;
  
- if   (planet==='mercury') {
+ if   (planet.toLowerCase()==='mercury') {
   
   displayPlanet( 'To Mercury!'); 
     
 	}   
-	 else if (planet==='venus') {
+	 else if (planet.toLowerCase()==='venus') {
  
            displayPlanet( 'To Venus!');      
 	}
-	 else if ( planet==='earth') {
+	 else if (planet.toLowerCase()==='earth') {
          
     displayPlanet( 'To Earth!');
     
  	}
-     else if (planet==='mars') {
+     else if (planet.toLowerCase()==='mars') {
 
 	 displayPlanet('To Mars!')
 	 
 	}
-	 else if (planet==='jupiter') {
+	 else if (planet.toLowerCase()==='jupiter') {
   
            displayPlanet('To Jupiter!');
    
     }
-	 else if (planet==='saturn') {
+	 else if (planet.toLowerCase()==='saturn') {
  
            displayPlanet( 'To Saturn!');
            
 	}
-	 else if ( planet==='uranus') {
+	 else if (planet.toLowerCase()==='uranus') {
     
     displayPlanet( 'To Uranus!');
           
