@@ -1,7 +1,33 @@
 4 Questions for each planet
+*parseFloat number answers
+*toLowerCase string answers
+
 Mercury:
 1. How many moons does Mercury have? Enter a number (i.e. '4', not 'four').
   Answer: 0
 2. How many Earth days does it take for Mercury to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.
   Answer: 88
-3. What is the polar diameter of Mercury? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').
+3. What is the polar diameter of Mercury, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').
+  Answer: 4879
+4. Mercury be observed, from Earth, passing across the face of the Sun. This event is called a transit. How many times per century does this transit of Mercury occur? Enter a number (i.e. '4', not 'four').
+  Answer: 17
+  
+Venus:
+1. Venus is the second brightest object in the night sky after what other object?
+  Answer: moon *Note: search string answer for 'moon' in case user enters 'the moon'.
+2. How many Earth days does it take for Venus to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.
+  Answer: 225
+3. How many moons does Venus have? Enter a number (i.e. '4', not 'four').
+  Answer: 0
+4. What was the first country to land a man-made spacecraft on Venus?
+  Answer: soviet union *Note: search string answer for 'soviet union' in case user enters 'the soviet union'.
+
+Earth:
+1. The Earth's rotation is known to be changing. Is it slowing down or speeding up?
+  Answer: slowing down
+2. Earth is the only planet not named after a ____? Fill in the blank.
+  Answer: god
+3. What is the equatorial diameter of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').
+  Answer: 12756
+4. What is the equatorial circumference of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').
+  Answer: 40030
