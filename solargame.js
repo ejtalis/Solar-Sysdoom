@@ -38,7 +38,7 @@ planet=document.getElementById('actionInput').value;
     displayPlanet( 'To Uranus!');
           
  	} 
-	 else if (planet==='neptune') {
+	 else if (planet.toLowerCase()==='neptune') {
   
            displayPlanet('To Neptune!');
    
