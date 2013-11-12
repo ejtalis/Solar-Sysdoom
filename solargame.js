@@ -69,4 +69,13 @@ document.getElementById('outputDiv').innerHTML=message;
 
 }
 
+
+function Mercury(answer)
+
+{
+	return RandomOneOf([]);
+	
+	if (answer.charAt(0)===)
+}
+
     //Hello Joe
