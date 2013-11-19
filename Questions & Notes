@@ -1,7 +1,83 @@
 4 Questions for each planet
+*parseFloat number answers
+*toLowerCase string answers
+
 Mercury:
 1. How many moons does Mercury have? Enter a number (i.e. '4', not 'four').
   Answer: 0
 2. How many Earth days does it take for Mercury to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.
   Answer: 88
-3. What is the polar diameter of Mercury? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').
+3. What is the polar diameter of Mercury, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').
+  Answer: 4879
+4. Mercury be observed, from Earth, passing across the face of the Sun. This event is called a transit. How many times per century does this transit of Mercury occur? Enter a number (i.e. '4', not 'four').
+  Answer: 17
+  
+Venus:
+1. Venus is the second brightest object in the night sky after what other object?
+  Answer: moon *Note: search string answer for 'moon' in case user enters 'the moon'.
+2. How many Earth days does it take for Venus to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.
+  Answer: 225
+3. How many moons does Venus have? Enter a number (i.e. '4', not 'four').
+  Answer: 0
+4. What was the first country to land a man-made spacecraft on Venus?
+  Answer: soviet union *Note: search string answer for 'soviet union' in case user enters 'the soviet union'.
+
+Earth:
+1. The Earth's rotation is known to be changing. Is it slowing down or speeding up?
+  Answer: slowing down
+2. Earth is the only planet not named after a ____. Fill in the blank.
+  Answer: god
+3. What is the equatorial diameter of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').
+  Answer: 12756
+4. What is the equatorial circumference of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').
+  Answer: 40030
+  
+Mars:
+1. How many missions to Mars have been successful? Enter a number (i.e. '4', not 'four').
+  Answer: 16
+2. Mars takes its name from the Roman god of what?
+  Answer: war
+3. How many moons does Mars have? Enter a number (i.e. '4', not 'four').
+  Answer: 2
+4. Mars has the largest ____ storms in the solar system. Fill in the blank.
+  Answer: dust
+  
+Jupiter:
+1. Jupiter, along with the other 4 outer planets, is a ____ giant. Fill in the blank.
+  Answer: gas
+2. How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').
+  Answer: 67
+3. Which moon if Jupiter's is the largest moon in the solar system?
+  Answer: Ganymede
+4. What is the equatorial circumference of Jupiter, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').
+  Answer: 439264
+  
+Saturn:
+1. Saturn is the second largest planet in the solar system. What is the largest planet in the solar system?
+  Answer: jupiter
+2. How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').
+  Answer: 62
+3. Who first observed Saturn's rings?
+  Answer: Galileo
+4. How many rings does Saturn have? Enter a number (i.e. '4', not 'four').
+  Answer: 7
+
+Uranus:
+1. Uranus was the first planet to be observed using a __________. Fill in the blank.
+  Answer: telescope
+2. How many moons does Uranus have?
+  Answer: 27
+3. In what year was Uranus discovered?
+  Answer: 1781
+4. All of Uranus' moons are named after characters from the works of William Shakespeare and Alexander ____. Fill in the blank.
+  Answer: pope
+
+Neptune:
+1. How many moons does Neptune have? Enter a number (i.e. '4', not 'four').
+  Answer: 14
+2. What is the name of Neptune's major moon?
+  Answer: tritan
+3. Although smaller in diamter to Uranus, Neptune has a greater _____. Fill in the blank.
+  Answer: mass
+4. In what year was Neptune discovered?
+  Answer: 1846
