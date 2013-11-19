@@ -2,13 +2,12 @@ function travelToPlanet(planet)
 
 {
 
-planet=document.getElementById('actionInput').value;
+planet = document.getElementById('actionInput').value;
  
- 	if   (planet.toLowerCase()==='mercury') {
+ 	if (planet.toLowerCase()==='mercury') {
   
   	displayPlanet( 'To Mercury!'); 
 	
-    
 	}   
 	 else if (planet.toLowerCase()==='venus') {
  
