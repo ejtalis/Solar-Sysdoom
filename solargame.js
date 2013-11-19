@@ -4,36 +4,49 @@ function travelToPlanet()
 
 planet = document.getElementById('actionInput').value;
  
+<<<<<<< HEAD
  	if (planet.toLowerCase()==='mercury') {
+=======
+ if   (planet==='mercury') {
+>>>>>>> parent of 4391f05... Update solargame.js
   
   	displayPlanet( 'To Mercury!'); 
 	
 	}   
-	 else if (planet.toLowerCase()==='venus') {
+	 else if (planet==='venus') {
  
            displayPlanet( 'To Venus!');      
 	}
-	 else if (planet.toLowerCase()==='earth') {
+	 else if ( planet==='earth') {
          
 	 displayPlanet( 'To Earth!');
     
  	}
+<<<<<<< HEAD
 	 else if (planet.toLowerCase()==='mars') {
+=======
+     else if (planet==='mars') {
+>>>>>>> parent of 4391f05... Update solargame.js
 
 	 displayPlanet('To Mars!')
 	 
 	}
-	 else if (planet.toLowerCase()==='jupiter') {
+	 else if (planet==='jupiter') {
   
            displayPlanet('To Jupiter!');
    
+<<<<<<< HEAD
     	}
 	 else if (planet.toLowerCase()==='saturn') {
+=======
+    }
+	 else if (planet==='saturn') {
+>>>>>>> parent of 4391f05... Update solargame.js
  
            displayPlanet( 'To Saturn!');
            
 	}
-	 else if (planet.toLowerCase()==='uranus') {
+	 else if ( planet==='uranus') {
     
 	   displayPlanet( 'To Uranus!');
           
