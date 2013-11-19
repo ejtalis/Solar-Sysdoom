@@ -53,8 +53,17 @@ planet=document.getElementById('actionInput').value;
  }
         
     
-       
-      
+function Correct()
+
+{
+alert('Correct! Type in another name of a Planet to get the next piece of the device!');
+}      
+
+function Wrong()
+
+{
+alert('Try Again!');
+}   
            
         
 
