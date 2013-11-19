@@ -4,11 +4,10 @@ function travelToPlanet(planet)
 
 planet=document.getElementById('actionInput').value;
  
- if   (planet.toLowerCase()==='mercury') {
+ 	if   (planet.toLowerCase()==='mercury') {
   
-  displayPlanet( 'To Mercury!'); 
+  	displayPlanet( 'To Mercury!'); 
 	
-  Mercury();
     
 	}   
 	 else if (planet.toLowerCase()==='venus') {
@@ -17,10 +16,10 @@ planet=document.getElementById('actionInput').value;
 	}
 	 else if (planet.toLowerCase()==='earth') {
          
-    displayPlanet( 'To Earth!');
+	 displayPlanet( 'To Earth!');
     
  	}
-     else if (planet.toLowerCase()==='mars') {
+	 else if (planet.toLowerCase()==='mars') {
 
 	 displayPlanet('To Mars!')
 	 
@@ -29,7 +28,7 @@ planet=document.getElementById('actionInput').value;
   
            displayPlanet('To Jupiter!');
    
-    }
+    	}
 	 else if (planet.toLowerCase()==='saturn') {
  
            displayPlanet( 'To Saturn!');
@@ -37,7 +36,7 @@ planet=document.getElementById('actionInput').value;
 	}
 	 else if (planet.toLowerCase()==='uranus') {
     
-    displayPlanet( 'To Uranus!');
+	   displayPlanet( 'To Uranus!');
           
  	} 
 	 else if (planet.toLowerCase()==='neptune') {
@@ -59,11 +58,13 @@ planet=document.getElementById('actionInput').value;
       
            
 function Correct()
+
 {
 alert('Correct! Type in another name of a Planet to get the next piece of the device!');
 }      
 
 function Wrong()
+
 {
 alert('Try Again!');
 }  
@@ -73,10 +74,7 @@ alert('Try Again!');
 function displayPlanet(message)
 
 {
-
-
 document.getElementById('outputDiv').innerHTML=message;  
-
 }
 
 
