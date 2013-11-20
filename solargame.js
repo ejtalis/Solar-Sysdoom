@@ -94,11 +94,11 @@ function mercuryCheckAnswer()
 {
 	userAns=document.getElementById('answerInput').value;
 	
-	if (mercRandomQAns===userAns) { 
+	if (userAns===mercRandomQAns) { 
 		 correct();
 	}
 	else if (userAns===‘’) {
-		alert(‘Please type in our answer!’);
+		alert(‘Please type in your answer!’);
 	}
 	else {
 		wrong();
