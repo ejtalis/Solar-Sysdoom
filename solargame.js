@@ -1,71 +1,58 @@
-﻿function travelToPlanet(planet)
+
+function travelToPlanet(planet)
 {
-
-planet=document.getElementById('actionInput').value;
+	planet=document.getElementById('actionInput').value;
  
- if (planet.toLowerCase()==='mercury') {
-  
-  displayPlanet( 'To Mercury!'); 
-  mercuryDoom();
-    
-	}   
-	 else if (planet.toLowerCase()==='venus') {
- 
-           displayPlanet( 'To Venus!');      
-	}
-	 else if (planet.toLowerCase()==='earth') {
-         
-    displayPlanet( 'To Earth!');
-    
- 	}
-     else if (planet.toLowerCase()==='mars') {
+	if (planet.toLowerCase()==='mercury') {
+ 	 	displayPlanet( 'To Mercury!'); 
+  		mercuryDoom();    
+ 	 }   
 
-	 displayPlanet('To Mars!');
+		else if (planet.toLowerCase()==='venus') {
+           		displayPlanet( 'To Venus!');      
+		}
 	 
-	}
-	 else if (planet.toLowerCase()==='jupiter') {
-  
-           displayPlanet('To Jupiter!');
-   
-    }
-	 else if (planet.toLowerCase()==='saturn') {
- 
-           displayPlanet( 'To Saturn!');
-           
-	}
-	 else if (planet.toLowerCase()==='uranus') {
-    
-    displayPlanet( 'To Uranus!');
-          
- 	} 
-	 else if (planet.toLowerCase()==='neptune') {
-  
-           displayPlanet('To Neptune!');
-   
-         }
-      
-	  else{ 
-            
-	   displayPlanet('You cannot travel there!');
-           
-	 }
- }
+	 		else if (planet.toLowerCase()==='earth') {         
+   	   			displayPlanet( 'To Earth!');   
+ 			}
+
+  			 	else if (planet.toLowerCase()==='mars') {
+					displayPlanet('To Mars!');	 
+			 	}
+
+				 	else if (planet.toLowerCase()==='jupiter') {  
+          					 displayPlanet('To Jupiter!');  
+  				 	}
+	 					else if (planet.toLowerCase()==='saturn') {
+           						displayPlanet( 'To Saturn!');           
+						}
+							 else if (planet.toLowerCase()==='uranus') {   
+   								 displayPlanet( 'To Uranus!');          
+ 						 	 } 
+
+							 	else if (planet.toLowerCase()==='neptune') {  
+          								 displayPlanet('To Neptune!');   
+        						 	}
+									  else {             
+	   									displayPlanet('You cannot travel there!');           
+								  	  }
+}
         
     
 function correct()
 {
-alert('Correct! Type in another name of a Planet to get the next piece of the device!');
+	alert('Correct! Type in another name of a Planet to get the next piece of the device!');
 }      
 
 function wrong()
 {
-alert('Try Again!');
+	alert('Try Again!');
 }   
    
   
 function displayPlanet(message)
 {
-document.getElementById('outputDiv').innerHTML=message;  
+	document.getElementById('outputDiv').innerHTML=message;  
 }
 
 
@@ -85,24 +72,23 @@ function mercuryDoom()
 	
 	mercRandomQAns=mercAnswers[pos];
 	
-	document.getElementById('outputDiv').innerHTML=mercRandomQues;
-	
+	document.getElementById('outputDiv').innerHTML=mercRandomQues;	
 }
 
 
 function mercuryCheckAnswer()
 {
-	userAns=document.getElementById('answerInput').value;
+   	userAns=document.getElementById('answerInput').value;
 	
-	if (userAns===mercRandomQAns) { 
-		 correct();
-	}
-	else if (userAns==='') {
-		alert(‘Please type in your answer!’);
-	}
-	else {
-		wrong();
-	}
+		if (userAns===mercRandomQAns) { 
+			 correct();
+		}
+		else if (userAns==='') {
+			alert(‘Please type in your answer!’);
+		}
+		else {
+			wrong();
+		}
 }
 
     //Hello Joe
