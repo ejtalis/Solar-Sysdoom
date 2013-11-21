@@ -1,5 +1,5 @@
 
-function travelToPlanet(planet)
+function travelToPlanet()
 {
 	planet=document.getElementById('actionInput').value;
  
