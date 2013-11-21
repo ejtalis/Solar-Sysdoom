@@ -124,3 +124,37 @@ function venusCheckAnswer()
 			wrong();
 		}
 }
+
+function earthDoom()
+{
+	earthQuestions=new Array();
+	earthQuestions[0]="The Earth's rotation is known to be changing. Is it slowing down or speeding up?";
+	earthQuestions[1]="Earth is the only planet not named after a ____. Fill in the blank.";
+	earthQuestions[2]="What is the equatorial diameter of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
+	earthQuestions[3]="What is the equatorial circumference of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
+  
+	earthAnswers=[“slowing down”,”god”,”12756”,”40030”];
+	
+	earthPos=RandomInt(0,3);
+	
+	earthRandomQues=earthQuestions[earthPos];
+	
+	earthRandomQAns=earthAnswers[earthPos];
+	
+	document.getElementById('outputDiv1').innerHTML=earthRandomQues;	
+}
+
+function earthCheckAnswer()
+{
+   	userAns=document.getElementById('answerInput').value;
+	
+		if (userAns===earthRandomQAns) { 
+			 correct();
+		}
+		else if (userAns==='') {
+			alert('Please type in your answer!');
+		}
+		else {
+			wrong();
+		}
+}
