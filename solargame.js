@@ -51,7 +51,7 @@ function wrong()
   
 function displayPlanet(message)
 {
-	document.getElementById('outputDiv0’).innerHTML=message;  
+	document.getElementById('outputDiv0').innerHTML=message;  
 }
 
 
@@ -71,7 +71,7 @@ function mercuryDoom()
 	
 	mercRandomQAns=mercAnswers[mercPos];
 	
-	document.getElementById('outputDiv1’).innerHTML=mercRandomQues;	
+	document.getElementById('outputDiv1').innerHTML=mercRandomQues;	
 }
 
 
@@ -106,7 +106,7 @@ function venusDoom()
 	
 	venusRandomQAns=venusAnswers[venusPos];
 	
-	document.getElementById('outputDiv1’).innerHTML=venusRandomQues;	
+	document.getElementById('outputDiv1').innerHTML=venusRandomQues;	
 }
 
 function venusCheckAnswer()
