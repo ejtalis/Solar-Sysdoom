@@ -8,7 +8,7 @@ function travelToPlanet()
  	 }   
 
 		else if (planet.toLowerCase()==='venus') {
-           		displayPlanet( 'To Venus!');      
+           		displayPlanet( 'To Venus!');     
 		}
 	 
 	 		else if (planet.toLowerCase()==='earth') {         
@@ -51,7 +51,7 @@ function wrong()
   
 function displayPlanet(message)
 {
-	document.getElementById('outputDiv').innerHTML=message;  
+	document.getElementById('outputDiv0’).innerHTML=message;  
 }
 
 
@@ -71,7 +71,7 @@ function mercuryDoom()
 	
 	mercRandomQAns=mercAnswers[mercPos];
 	
-	document.getElementById('outputDiv').innerHTML=mercRandomQues;	
+	document.getElementById('outputDiv1’).innerHTML=mercRandomQues;	
 }
 
 
@@ -106,7 +106,7 @@ function venusDoom()
 	
 	venusRandomQAns=venusAnswers[venusPos];
 	
-	document.getElementById('outputDiv').innerHTML=venusRandomQues;	
+	document.getElementById('outputDiv1’).innerHTML=venusRandomQues;	
 }
 
 function venusCheckAnswer()
