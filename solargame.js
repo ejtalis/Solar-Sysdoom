@@ -8,7 +8,8 @@ function travelToPlanet()
  	 }   
 
 		else if (planet.toLowerCase()==='venus') {
-           		displayPlanet( 'To Venus!');     
+           		displayPlanet( 'To Venus!');
+			venusDoom();     
 		}
 	 
 	 		else if (planet.toLowerCase()==='earth') {         
