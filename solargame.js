@@ -1,4 +1,3 @@
-
 function travelToPlanet()
 {
 	planet=document.getElementById('actionInput').value;
@@ -84,7 +83,7 @@ function mercuryCheckAnswer()
 			 correct();
 		}
 		else if (userAns==='') {
-			alert(‘Please type in your answer!’);
+			alert('Please type in your answer!');
 		}
 		else {
 			wrong();
