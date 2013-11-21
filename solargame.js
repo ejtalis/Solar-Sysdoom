@@ -97,7 +97,7 @@ function mercuryCheckAnswer()
 	if (userAns===mercRandomQAns) { 
 		 correct();
 	}
-	else if (userAns===‘’) {
+	else if (userAns==='') {
 		alert(‘Please type in your answer!’);
 	}
 	else {
