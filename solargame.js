@@ -5,7 +5,7 @@ function travelToPlanet(planet)
  
 	if (planet.toLowerCase()==='mercury') {
  	 	displayPlanet( 'To Mercury!'); 
-  		mercuryDoom();    
+  		// mercuryDoom();    
  	 }   
 
 		else if (planet.toLowerCase()==='venus') {
