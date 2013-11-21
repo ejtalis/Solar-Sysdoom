@@ -66,7 +66,7 @@ function mercuryDoom()
   
 	mercAnswers=["0","88","4879","17"];
 	
-	mercPos=RandomInt(0,mercAnswers.length);
+	mercPos=RandomInt(0,3);
 	
 	mercRandomQues=mercQuestions[mercPos];
 	
