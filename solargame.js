@@ -9,7 +9,7 @@ function travelToPlanet()
 
 		else if (planet.toLowerCase()==='venus') {
            		displayPlanet( 'To Venus!');
-			// venusDoom();     
+			venusDoom();     
 		}
 	 
 	 		else if (planet.toLowerCase()==='earth') {         
@@ -101,7 +101,7 @@ function venusDoom()
   
 	venusAnswers=["moon","225","0","soviet union"];
 	
-	venusPos=RandomInt(0,venusQuestions.length);
+	venusPos=RandomInt(0,3);
 	
 	venusRandomQues=venusQuestions[venusPos];
 	
