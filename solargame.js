@@ -1,4 +1,4 @@
-function travelToPlanet()
+﻿function travelToPlanet()
 {
 	planet=document.getElementById('actionInput').value;
  
@@ -54,6 +54,20 @@ function displayPlanet(message)
 {
 	document.getElementById('outputDiv0').innerHTML=message;  
 }
+
+function nextPage(curr,next) {
+      var next, currPage, nextPage;
+
+      currPage = document.getElementById('page' + curr);
+      nextPage = document.getElementById('page' + next);
+      
+      currPage.style.display = 'none';
+      nextPage.style.display = 'block';
+    }
+
+    function start() {
+      document.getElementById('page0').style.display = 'block';
+    }
 
 
 function mercuryDoom()
