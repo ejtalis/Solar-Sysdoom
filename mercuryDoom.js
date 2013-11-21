@@ -15,7 +15,7 @@ function mercuryDoom()
 	
 	mercRandomQAns=mercAnswers[pos];
 	
-	document.getElementById('outputDiv').innerHTML=mercRandomQues;
+	document.getElementById('outputDiv2').innerHTML=mercRandomQues;
 }
 	
 function mercuryCheckAnswer()
