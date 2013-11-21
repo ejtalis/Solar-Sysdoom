@@ -98,7 +98,7 @@ function venusDoom()
 	venusQuestions[2]="How many moons does Venus have? Enter a number (i.e. '4', not 'four').";
 	venusQuestions[3]="What was the first country to land a man-made spacecraft on Venus?";
   
-	venusAnswers=["moon”,”225”,”0”,”soviet union”];
+	venusAnswers=["moon","225","0","soviet union"];
 	
 	venusPos=RandomInt(0,venusQuestions.length);
 	
