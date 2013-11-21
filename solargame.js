@@ -67,9 +67,9 @@ function mercuryDoom()
 	
 	mercPos=RandomInt(0,mercQuestions.length);
 	
-	mercRandomQues=mercQuestions[pos];
+	mercRandomQues=mercQuestions[mercPos];
 	
-	mercRandomQAns=mercAnswers[pos];
+	mercRandomQAns=mercAnswers[mercPos];
 	
 	document.getElementById('outputDiv').innerHTML=mercRandomQues;	
 }
