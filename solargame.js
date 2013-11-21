@@ -1,9 +1,9 @@
-function travelToPlanet(planet)
+﻿function travelToPlanet(planet)
 {
 
 planet=document.getElementById('actionInput').value;
  
- if   (planet.toLowerCase()==='mercury') {
+ if (planet.toLowerCase()==='mercury') {
   
   displayPlanet( 'To Mercury!'); 
   mercuryDoom();
@@ -20,7 +20,7 @@ planet=document.getElementById('actionInput').value;
  	}
      else if (planet.toLowerCase()==='mars') {
 
-	 displayPlanet('To Mars!')
+	 displayPlanet('To Mars!');
 	 
 	}
 	 else if (planet.toLowerCase()==='jupiter') {
