@@ -90,4 +90,36 @@ function mercuryCheckAnswer()
 		}
 }
 
-    //Hello Joe
+function venusDoom()
+{
+	venusQuestions=new Array();
+	venusQuestions[0]="Venus is the second brightest object in the night sky after what other object?";
+	venusQuestions[1]="How many Earth days does it take for Venus to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.";
+	venusQuestions[2]="How many moons does Venus have? Enter a number (i.e. '4', not 'four').";
+	venusQuestions[3]="What was the first country to land a man-made spacecraft on Venus?";
+  
+	venusAnswers=["moon”,”225”,”0”,”soviet union”];
+	
+	venusPos=RandomInt(0,venusQuestions.length);
+	
+	venusRandomQues=venusQuestions[venusPos];
+	
+	venusRandomQAns=venusAnswers[venusPos];
+	
+	document.getElementById('outputDiv').innerHTML=venusRandomQues;	
+}
+
+function venusCheckAnswer()
+{
+   	userAns=document.getElementById('answerInput').value;
+	
+		if (userAns===venusRandomQAns) { 
+			 correct();
+		}
+		else if (userAns==='') {
+			alert('Please type in your answer!');
+		}
+		else {
+			wrong();
+		}
+}
