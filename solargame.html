@@ -4,23 +4,46 @@
 	<meta charset="utf-8" >
 	<title>Solar Sysdoom</title>
 	<style type="text/css">
-	#output { font-style: italic; font-weight: bold; font-color: white;}
+	body { text-align: center; }
+    	div { display: none; }
 	</style>
 	<script type="text/javascript" src="solargame.js"></script>
 	<script type="text/javascript" src="http://www.balance3e.com/random.js"></script>
+
 </head>
-<body>
- <center>
-	<label for="actionInput">Where do you want to travel?</label>
+<body onload="startScreen();">
+	
+	<div id="page0">
+	<h1>Solar Sysdoom!</h1>
+	<br>
+	<p>The year is 3013 and the world is in grave danger.<br> 
+	The player is introduced to the story of how the world as they know it, and the entire solar system, will be destroyed unless they collect all the pieces of a device that will keep the sun shining.<br> 
+	Otherwise the sun will die out, and the solar system along with all its inhabitance, will cease to exist.<br> 
+	The player has to go to each planet in the solar system, and then answer questions about that planet in order to get each piece of the device, and upgrade their vessel, so they can prepare for the final voyage to the sun.<br> 
+	If the player goes to the sun too early they will be disintegrated and fail your mission.<br> 
+	Otherwise, the player is allowed to freely go to each planet in any order, and can retry the questions about each planet. Although, if the player gets the questions wrong in the final mission to the sun, they have one of two options: sacrifice themselves to help get the device back into its proper position, or go to another nearby solar system to a planet that can also sustain life (possibly the one that the aliens live on) using the device as a power source, thus leaving earth and the rest of the solar system to their doom.<br> 
+	The player will also have the option of naming their vessel and team. The player will also find out that the pieces of the device were placed on each planet, after conflicts in the solar system with aliens, in case they tried to destroy the sun. 
+	But now because of an unexpected chemical imbalance in the fusion reaction that the sun undergoes, it is up to the player to save the solar system!</p> 
+ 
+	
+    <button onclick="nextPage(0,1);">Click to Begin</button>
+  </div>
+	
+  <div id="page1">
+	<h2>Travel</h2>
+	<label for="actionInput">What planet do you want to travel to in the solar system?</label>
 	<input id="actionInput" type="text">
-	<button onclick="travelToPlanet()">Enter</button>
+	<button onclick="travelToPlanet();">Enter</button>
 	<hr>
 	<div id="outputDiv0"></div>
-	<br>
-	<div id="outputDiv1"></div>
-	<label for="answerInput">Enter your answer here</label>
+	</div>
+	<div id="page2">	
+	
+	<label for="answerInput">Enter your answer here:</label>
 	<input id="answerInput" type="text">
-	<button onclick="mercuryCheckAnswer()">Enter</button>
- </center>
+	<button onclick="mercuryCheckAnswer();">Enter</button>
+	<div id="outputMercury">
+	</div>
+  </div>
 </body>
 </html>
