@@ -67,7 +67,7 @@ function nextPage(curr,next)
 }
 
 
-function start()
+function startScreen()
 {
 document.getElementById('page0').style.display = 'block';
 }
