@@ -154,7 +154,7 @@ function earthDoom()
 	earthQuestions[2]="What is the equatorial diameter of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
 	earthQuestions[3]="What is the equatorial circumference of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
   
-	earthAnswers=[“slowing down”,”god”,”12756”,”40030”];
+	earthAnswers=["slowing down","god","12756","40030"];
 	
 	earthPos=RandomInt(0,3);
 	
@@ -190,7 +190,7 @@ function marsDoom()
 	marsQuestions[2]="How many moons does Mars have? Enter a number (i.e. '4', not 'four').";
 	marsQuestions[3]="Mars has the largest ____ storms in the solar system. Fill in the blank.";
   
-	marsAnswers=[“16”,”war”,”2”,”dust”];
+	marsAnswers=["16","war","2","dust"];
 	
 	marsPos=RandomInt(0,3);
 	
@@ -226,7 +226,7 @@ function jupiterDoom()
 	jupQuestions[2]="Which moon if Jupiter's is the largest moon in the solar system?";
 	jupQuestions[3]="What is the equatorial circumference of Jupiter, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
   
-	jupAnswers=[“gas”,”67”,”ganymede”,”439264”];
+	jupAnswers=["gas","67","ganymede","439264"];
 	
 	jupPos=RandomInt(0,3);
 	
@@ -262,7 +262,7 @@ function saturnDoom()
 	satQuestions[2]="Who first observed Saturn's rings?";
 	satQuestions[3]="How many rings does Saturn have? Enter a number (i.e. '4', not 'four').";
   
-	satAnswers=[“jupiter”,”62”,”galileo”,”7”];
+	satAnswers=["jupiter","62","galileo","7"];
 	
 	satPos=RandomInt(0,3);
 	
