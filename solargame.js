@@ -298,7 +298,7 @@ function uranusDoom()
 	uranusQuestions[2]="In what year was Uranus discovered?";
 	uranusQuestions[3]="All of Uranus' moons are named after characters from the works of William Shakespeare and Alexander ____. Fill in the blank.";
   
-	uranusAnswers=[“telescope”,”27”,”1781”,”pope”];
+	uranusAnswers=["telescope","27","1781","pope"];
 	
 	uranusPos=RandomInt(0,3);
 	
@@ -306,7 +306,7 @@ function uranusDoom()
 	
 	uranusRandomQAns=uranusAnswers[uranusPos];
 	
-	document.getElementById('outputUranus’).innerHTML=uranusRandomQues;
+	document.getElementById('outputUranus').innerHTML=uranusRandomQues;
 }
 
 function uranusCheckAnswer()
@@ -331,9 +331,9 @@ function neptuneDoom()
 	nepQuestions[0]="How many moons does Neptune have? Enter a number (i.e. '4', not 'four').";
 	nepQuestions[1]="What is the name of Neptune's major moon?";
 	nepQuestions[2]="Although smaller in diamter to Uranus, Neptune has a greater _____. Fill in the blank.";
-	nepQuestions[3]="Neptune has only been passed by one spacecraft, Voyager 2 which flew by on the 25th of August ____. Fill in the blank”;
+	nepQuestions[3]="Neptune has only been passed by one spacecraft, Voyager 2 which flew by on the 25th of August ____. Fill in the blank";
   
-	nepAnswers=[“14”,”tritan”,”mass”,”1989”];
+	nepAnswers=["14","tritan","mass","1989"];
 	
 	nepPos=RandomInt(0,3);
 	
@@ -341,7 +341,7 @@ function neptuneDoom()
 	
 	nepRandomQAns=nepAnswers[nepPos];
 	
-	document.getElementById('outputNeptune’).innerHTML=nepRandomQues;
+	document.getElementById('outputNeptune').innerHTML=nepRandomQues;
 }
 
 
