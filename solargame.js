@@ -70,7 +70,8 @@ function nextPage(curr,next)
 function start()
 {
 document.getElementById('page0').style.display = 'block';
-}
+}
+
 
 
 function mercuryDoom()
@@ -89,7 +90,7 @@ function mercuryDoom()
 	
 	mercRandomQAns=mercAnswers[mercPos];
 	
-	document.getElementById('outputMercury’).innerHTML=mercRandomQues;	
+	document.getElementById('outputMercury').innerHTML=mercRandomQues;	
 }
 
 
@@ -125,7 +126,7 @@ function venusDoom()
 	
 	venusRandomQAns=venusAnswers[venusPos];
 	
-	document.getElementById('outputVenus’).innerHTML=venusRandomQues;	
+	document.getElementById('outputVenus').innerHTML=venusRandomQues;	
 }
 
 
@@ -161,7 +162,7 @@ function earthDoom()
 	
 	earthRandomQAns=earthAnswers[earthPos];
 	
-	document.getElementById('outputEarth’).innerHTML=earthRandomQues;	
+	document.getElementById('outputEarth').innerHTML=earthRandomQues;	
 }
 
 
@@ -197,7 +198,7 @@ function marsDoom()
 	
 	marsRandomQAns=marsAnswers[marsPos];
 	
-	document.getElementById('outputMars’).innerHTML=marsRandomQues;	
+	document.getElementById('outputMars').innerHTML=marsRandomQues;	
 }
 
 
@@ -233,7 +234,7 @@ function jupiterDoom()
 	
 	jupRandomQAns=jupAnswers[jupPos];
 	
-	document.getElementById('outputJupiter’).innerHTML=jupRandomQues;	
+	document.getElementById('outputJupiter').innerHTML=jupRandomQues;	
 }
 
 
@@ -269,7 +270,7 @@ function saturnDoom()
 	
 	satRandomQAns=satAnswers[satPos];
 	
-	document.getElementById('outputSaturn’).innerHTML=satRandomQues;	
+	document.getElementById('outputSaturn').innerHTML=satRandomQues;	
 }
 
 
