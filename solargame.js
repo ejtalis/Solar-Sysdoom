@@ -1,9 +1,9 @@
-function travelToPlanet()
+﻿function travelToPlanet()
 {
 	planet=document.getElementById('actionInput').value;
  
 	if (planet.toLowerCase()==='mercury') {
- 	 	displayPlanet( 'To Mercury!'); 
+ 	 	nextPage(1, 2); 
   		mercuryDoom();    
  	 }   
 
@@ -43,7 +43,10 @@ function correct()
 {
 	alert('Correct! Type in another name of a Planet to get the next piece of the device!');
 }      
+<<<<<<< HEAD
 
+=======
+>>>>>>> Changes to both the html and js.
 
 function wrong()
 {
@@ -56,14 +59,22 @@ function displayPlanet(message)
 	document.getElementById('outputDiv0').innerHTML=message;  
 }
 
+<<<<<<< HEAD
 
 function nextPage(curr,next)
 {
       var next, currPage, nextPage;
+=======
+function nextPage(curr, next) {
+      var currPage, nextPage;
+
+>>>>>>> Changes to both the html and js.
       currPage = document.getElementById('page' + curr);
-      nextPage = document.getElementById('page' + next);      
+      nextPage = document.getElementById('page' + next);
+      
       currPage.style.display = 'none';
       nextPage.style.display = 'block';
+<<<<<<< HEAD
 }
 
 
@@ -72,15 +83,24 @@ function startScreen()
 document.getElementById('page0').style.display = 'block';
 }
 
+=======
+    }
+
+    
+function startScreen() 
+{
+      document.getElementById('page0').style.display = 'block';
+}
+>>>>>>> Changes to both the html and js.
 
 
 function mercuryDoom()
 {
 	mercQuestions=new Array();
-	mercQuestions[0]="How many moons does Mercury have? Enter a number (i.e. ’4’ not ’four’).";
-	mercQuestions[1]="How many Earth days does it take for Mercury to rotate once around its axis? Enter a number (i.e. ‘4’, not ‘four’) and round your answer to the nearest whole number.";
-	mercQuestions[2]="What is the polar diameter of Mercury, in km? Enter a number (i.e. ‘4’, not ‘four’) and do not include commas (i.e. ‘3997’, not ‘3,997’).";
-	mercQuestions[3]="Mercury be observed, from Earth, passing across the face of the Sun. This event is called a transit. How many times per century does this transit of Mercury occur? Enter a number (i.e. ‘4’, not ‘four’).";
+	mercQuestions[0]="How many moons does Mercury have? Enter a number (i.e. '4' not 'four').";
+	mercQuestions[1]="How many Earth days does it take for Mercury to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.";
+	mercQuestions[2]="What is the polar diameter of Mercury, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
+	mercQuestions[3]="Mercury be observed, from Earth, passing across the face of the Sun. This event is called a transit. How many times per century does this transit of Mercury occur? Enter a number (i.e. '4', not 'four').";
   
 	mercAnswers=["0","88","4879","17"];
 	
@@ -108,7 +128,10 @@ function mercuryCheckAnswer()
 			wrong();
 		}
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> Changes to both the html and js.
 
 function venusDoom()
 {
@@ -126,9 +149,14 @@ function venusDoom()
 	
 	venusRandomQAns=venusAnswers[venusPos];
 	
+<<<<<<< HEAD
 	document.getElementById('outputVenus').innerHTML=venusRandomQues;	
 }
 
+=======
+	document.getElementById('outputDiv1').innerHTML=venusRandomQues;	
+}
+>>>>>>> Changes to both the html and js.
 
 function venusCheckAnswer()
 {
@@ -144,7 +172,10 @@ function venusCheckAnswer()
 			wrong();
 		}
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> Changes to both the html and js.
 
 function earthDoom()
 {
@@ -162,9 +193,14 @@ function earthDoom()
 	
 	earthRandomQAns=earthAnswers[earthPos];
 	
+<<<<<<< HEAD
 	document.getElementById('outputEarth').innerHTML=earthRandomQues;
 }
 
+=======
+	document.getElementById('outputDiv1').innerHTML=earthRandomQues;	
+}
+>>>>>>> Changes to both the html and js.
 
 function earthCheckAnswer()
 {
@@ -180,6 +216,7 @@ function earthCheckAnswer()
 			wrong();
 		}
 }
+<<<<<<< HEAD
 
 
 function marsDoom()
@@ -359,3 +396,5 @@ function neptuneCheckAnswer()
 			wrong();
 		}
 }
+=======
+>>>>>>> Changes to both the html and js.
