@@ -162,7 +162,7 @@ function earthDoom()
 	
 	earthRandomQAns=earthAnswers[earthPos];
 	
-	document.getElementById('outputEarth').innerHTML=earthRandomQues;	
+	document.getElementById('outputEarth').innerHTML=earthRandomQues;
 }
 
 
@@ -330,7 +330,7 @@ function neptuneDoom()
 	nepQuestions=new Array();
 	nepQuestions[0]="How many moons does Neptune have? Enter a number (i.e. '4', not 'four').";
 	nepQuestions[1]="What is the name of Neptune's major moon?";
-	nepQuestions[2]="Although smaller in diamter to Uranus, Neptune has a greater _____. Fill in the blank.";
+	nepQuestions[2]="Although smaller in diameter to Uranus, Neptune has a greater _____. Fill in the blank.";
 	nepQuestions[3]="Neptune has only been passed by one spacecraft, Voyager 2 which flew by on the 25th of August ____. Fill in the blank";
   
 	nepAnswers=["14","tritan","mass","1989"];
