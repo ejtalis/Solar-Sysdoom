@@ -14,32 +14,35 @@
 </head>
 <body onload="startScreen();">
 
-<div id="page10">
+<div id="page0">
 	<h2>Solar Sysdoom</h2>
 	<label for="teamNameInput">Enter your team name here:</label>
 	<input id="teamNameInput" type="text">
+	<br>
 	<label for="shipNameInput">Enter your spaceship name here:</label>
 	<input id="shipNameInput" type="text">
-	<button onclick="nextPage(10,0);">Click to begin</button>
+	<br>
+	<button onclick="nextPage(0,1);">Click to begin</button>
 </div>
 	
-<div id="page0">
+<div id="page1">
 	<h1>Solar Sysdoom!</h1>
 	<br>
-	<p>The year is 3013 and the world is in grave danger.<br> 
+	<div id="storyDiv">The year is 3013 and the world is in grave danger.<br> 
 	The player  the world as we know it, and the entire solar system, will be destroyed unless you collect all the pieces of a device that will keep the sun shining.<br> 
 	Otherwise the sun will die out, and the solar system along with all its inhabitance, will cease to exist.<br> + 
 	The player has to go to each planet in the solar system, and then answer questions about that planet in order to get each piece of the device, and upgrade their vessel, so they can prepare for the final voyage to the sun.<br> 
 	If the player goes to the sun too early they will be disintegrated and fail your mission.<br> 
 	Otherwise, the player is allowed to freely go to each planet in any order, and can retry the questions about each planet. Although, if the player gets the questions wrong in the final mission to the sun, they have one of two options: sacrifice themselves to help get the device back into its proper position, or go to another nearby solar system to a planet that can also sustain life (possibly the one that the aliens live on) using the device as a power source, thus leaving earth and the rest of the solar system to their doom.<br> 
 	The player will also have the option of naming their vessel and team. The player will also find out that the pieces of the device were placed on each planet, after conflicts in the solar system with aliens, in case they tried to destroy the sun. 
-	But now because of an unexpected chemical imbalance in the fusion reaction that the sun undergoes, it is up to the player to save the solar system!</p> 
+	But now because of an unexpected chemical imbalance in the fusion reaction that the sun undergoes, it is up to the player to save the solar system!
+	</div>
  
-    <button onclick="nextPage(0,1);">Click to Begin</button>
+    <button onclick="nextPage(1,2);">Click to Begin</button>
   </div>
 
 	
-  <div id="page1">
+  <div id="page2">
 	<h2>Travel</h2>
 	<label for="actionInput">What planet do you want to travel to in the solar system?</label>
 	<input id="actionInput" type="text" value="">
@@ -47,10 +50,10 @@
 	
 	<hr>
 
-	<div id="outputDiv0"></div>
+	<div id="outputDivTravel"></div>
     </div>
  
- <div id="page2">	
+ <div id="page3">	
 	<h2>Mercury</h2>
 	<div id="outputMercury"></div>
 	<label for="answerInputMercury">Enter your answer here:</label>
@@ -58,7 +61,7 @@
 	<button onclick="mercuryCheckAnswer();">Enter</button>
 	
     </div>
-  <div id="page3">	
+  <div id="page4">	
 	<h2>Venus</h2>
 	<div id="outputVenus"></div>
 	<label for="answerInputVenus">Enter your answer here:</label>
@@ -66,7 +69,7 @@
 	<button onclick="venusCheckAnswer();">Enter</button>
 	
     </div>
-	<div id="page4">	
+	<div id="page5">	
 	<h2>Earth</h2>
 	<div id="outputEarth"></div>
 	<label for="answerInputEarth">Enter your answer here:</label>
@@ -75,7 +78,7 @@
 	
     </div>
 
-<div id="page5">	
+<div id="page6">	
 	<h2>Mars</h2>
 	<div id="outputMars"></div>
 	<label for="answerInputMars">Enter your answer here:</label>
@@ -84,7 +87,7 @@
 	
     </div>
 
-<div id="page6">	
+<div id="page7">	
 	<h2>Jupiter</h2>
 	<div id="outputJupiter"></div>
 	<label for="answerInputJupiter">Enter your answer here:</label>
@@ -93,7 +96,7 @@
 	
     </div>
 
-<div id="page7">	
+<div id="page8">	
 	<h2>Saturn</h2>
 	<div id="outputSaturn"></div>
 	<label for="answerInputSaturn">Enter your answer here:</label>
@@ -102,7 +105,7 @@
 	
     </div>
 
-<div id="page8">	
+<div id="page9">	
 	<h2>Uranus</h2>
 	<div id="outputUranus"></div>
 	<label for="answerInputUranus">Enter your answer here:</label>
@@ -111,7 +114,7 @@
 	
     </div>
 
-<div id="page9">	
+<div id="page10">	
 	<h2>Neptune</h2>
 	<div id="outputNeptune"></div>
 	<label for="answerInputNeptune">Enter your answer here:</label>
