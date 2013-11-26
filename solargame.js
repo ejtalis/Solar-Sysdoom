@@ -3,40 +3,40 @@ function travelToPlanet()
 	planet=document.getElementById('actionInput').value;
  
 	if (planet.toLowerCase()==='mercury') {
- 	 	nextPage(1, 2); 
+ 	 	nextPage(2, 3); 
   		mercuryDoom();    
  	 }   
 
 		else if (planet.toLowerCase()==='venus') {
-           		nextPage(1,3);
+           		nextPage(2,4);
 			venusDoom();     
 		}
 	 
 	 		else if (planet.toLowerCase()==='earth') {         
-   	   			nextPage(1,4);
+   	   			nextPage(2,5);
    	   			earthDoom();
  			}
 
   			 	else if (planet.toLowerCase()==='mars') {
-					nextPage(1,5);
+					nextPage(2,6);
 					marsDoom();
 			 	}
 
 				 	else if (planet.toLowerCase()==='jupiter') {  
-          					 nextPage(1,6);
+          					 nextPage(2,7);
           					 jupiterDoom();
   				 	}
 	 					else if (planet.toLowerCase()==='saturn') {
-           						nextPage(1,7);
+           						nextPage(2,8);
            						saturnDoom();
 						}
 							 else if (planet.toLowerCase()==='uranus') {   
-   								 nextPage(1,8);
+   								 nextPage(2,9);
    								 uranusDoom();
  						 	 } 
 
 							 	else if (planet.toLowerCase()==='neptune') {  
-          								 nextPage(1,9)
+          								 nextPage(2,10)
           								 neptuneDoom();
         						 	}
 									  else {             
@@ -58,7 +58,7 @@ function wrong()
   
  function displayPlanet(message)
 {
-	document.getElementById('outputDiv0').innerHTML=message;  
+	document.getElementById('outputDivTravel').innerHTML=message;  
 }
 
 
@@ -78,7 +78,7 @@ function nextPage(curr,next)
 
 function startScreen()
 {
-document.getElementById('page10').style.display = 'block';
+document.getElementById('page0').style.display = 'block';
 }
 
    
@@ -102,7 +102,7 @@ function mercuryDoom()
 	
 	var mercRandomQues=mercQuestions[mercPos];
 	
-	 mercRandomQAns=mercAnswers[mercPos];
+	mercRandomQAns=mercAnswers[mercPos];
 	
 	document.getElementById('outputMercury').style.display = 'block';
 	
@@ -116,7 +116,7 @@ function mercuryCheckAnswer()
 	
 		if (userAns===mercRandomQAns) { 
 			 correct();
-			nextPage(2,1);
+			nextPage(3,2);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -140,7 +140,7 @@ function venusDoom()
 	
 	var venusRandomQues=venusQuestions[venusPos];
 	
-	 venusRandomQAns=venusAnswers[venusPos];
+	venusRandomQAns=venusAnswers[venusPos];
 	
 	document.getElementById('outputVenus').style.display = 'block';
 	
@@ -154,7 +154,7 @@ function venusCheckAnswer()
 	
 		if (userAns===venusRandomQAns) { 
 			 correct();
-			nextPage(3,1);
+			nextPage(4,2);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -178,7 +178,7 @@ function earthDoom()
 	
 	var earthRandomQues=earthQuestions[earthPos];
 	
-	 earthRandomQAns=earthAnswers[earthPos];
+	earthRandomQAns=earthAnswers[earthPos];
 	
 	document.getElementById('outputEarth').style.display = 'block';
 	
@@ -193,7 +193,7 @@ function earthCheckAnswer()
 	
 		if (userAns===earthRandomQAns) { 
 			 correct();
-			nextPage(4,1);
+			nextPage(5,2);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -218,7 +218,7 @@ function marsDoom()
 	
 	var marsRandomQues=marsQuestions[marsPos];
 	
-	 marsRandomQAns=marsAnswers[marsPos];
+	marsRandomQAns=marsAnswers[marsPos];
 	
 	document.getElementById('outputMars').style.display = 'block';
 	
@@ -232,7 +232,7 @@ function marsCheckAnswer()
 	
 		if (userAns===marsRandomQAns) { 
 			 correct();
-			nextPage(5,1);
+			nextPage(6,2);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -257,7 +257,7 @@ function jupiterDoom()
 	
 	var jupRandomQues=jupQuestions[jupPos];
 	
-	 jupRandomQAns=jupAnswers[jupPos];
+	jupRandomQAns=jupAnswers[jupPos];
 	
 	document.getElementById('outputJupiter').style.display = 'block';
 	
@@ -271,7 +271,7 @@ function jupiterCheckAnswer()
 	
 		if (userAns===jupRandomQAns) { 
 			 correct();
-			nextPage(6,1);
+			nextPage(7,2);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -296,7 +296,7 @@ function saturnDoom()
 	
 	var satRandomQues=satQuestions[satPos];
 	
-	 satRandomQAns=satAnswers[satPos];
+	satRandomQAns=satAnswers[satPos];
 	
 	document.getElementById('outputSaturn').style.display = 'block';
 	
@@ -310,7 +310,7 @@ function saturnCheckAnswer()
 	
 		if (userAns===satRandomQAns) { 
 			 correct();
-			nextPage(7,1);
+			nextPage(8,2);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -327,7 +327,7 @@ function uranusDoom()
 	uranusQuestions[0]="Uranus was the first planet to be observed using a __________. Fill in the blank.";
 	uranusQuestions[1]="How many moons does Uranus have?";
 	uranusQuestions[2]="In what year was Uranus discovered?";
-	uranusQuestions[3]="All of Uranus\' moons are named after characters from the works of William Shakespeare and Alexander ____. Fill in the blank.";
+	uranusQuestions[3]="All of Uranus' moons are named after characters from the works of William Shakespeare and Alexander ____. Fill in the blank.";
   
 	var uranusAnswers=["telescope","27","1781","pope"];
 	
@@ -335,7 +335,7 @@ function uranusDoom()
 	
 	var uranusRandomQues=uranusQuestions[uranusPos];
 	
-	 uranusRandomQAns=uranusAnswers[uranusPos];
+	uranusRandomQAns=uranusAnswers[uranusPos];
 	
 	document.getElementById('outputUranus').style.display = 'block';
 	
@@ -348,7 +348,7 @@ function uranusCheckAnswer()
 	
 		if (userAns===uranusRandomQAns) { 
 			 correct();
-			nextPage(8,1);
+			nextPage(9,2);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -373,7 +373,7 @@ function neptuneDoom()
 	
 	var nepRandomQues=nepQuestions[nepPos];
 	
-	 nepRandomQAns=nepAnswers[nepPos];
+	nepRandomQAns=nepAnswers[nepPos];
 	
 	document.getElementById('outputNeptune').style.display = 'block';
 	
@@ -387,7 +387,7 @@ function neptuneCheckAnswer()
 	
 		if (userAns===nepRandomQAns) { 
 			 correct();
-			nextPage(9,1);
+			nextPage(10,2);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
