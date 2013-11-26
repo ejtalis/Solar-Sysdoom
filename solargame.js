@@ -8,30 +8,36 @@ function travelToPlanet()
  	 }   
 
 		else if (planet.toLowerCase()==='venus') {
-           		displayPlanet( 'To Venus!');
+           		nextPage(1,3);
 			venusDoom();     
 		}
 	 
 	 		else if (planet.toLowerCase()==='earth') {         
-   	   			displayPlanet( 'To Earth!');   
+   	   			nextPage(1,4);
+   	   			earthDoom();
  			}
 
   			 	else if (planet.toLowerCase()==='mars') {
-					displayPlanet('To Mars!');	 
+					nextPage(1,5);
+					earthDoom();
 			 	}
 
 				 	else if (planet.toLowerCase()==='jupiter') {  
-          					 displayPlanet('To Jupiter!');  
+          					 nextPage(1,6);
+          					 jupiterDoom();
   				 	}
 	 					else if (planet.toLowerCase()==='saturn') {
-           						displayPlanet( 'To Saturn!');           
+           						nextPage(1,7);
+           						saturnDoom();
 						}
 							 else if (planet.toLowerCase()==='uranus') {   
-   								 displayPlanet( 'To Uranus!');          
+   								 nextPage(1,8);
+   								 uranusDoom();
  						 	 } 
 
 							 	else if (planet.toLowerCase()==='neptune') {  
-          								 displayPlanet('To Neptune!');   
+          								 nextPage(1,9)
+          								 neptuneDoom();
         						 	}
 									  else {             
 	   									displayPlanet('You cannot travel there!');           
@@ -135,6 +141,8 @@ function venusDoom()
 	
 	venusRandomQAns=venusAnswers[venusPos];
 	
+	document.getElementById('outputVenus').style.display = 'block';
+	
 	document.getElementById('outputVenus').innerHTML=venusRandomQues;	
 
 }
@@ -169,6 +177,8 @@ function earthDoom()
 	earthRandomQues=earthQuestions[earthPos];
 	
 	earthRandomQAns=earthAnswers[earthPos];
+	
+	document.getElementById('outputEarth').style.display = 'block';
 	
 	document.getElementById('outputEarth').innerHTML=earthRandomQues;
 }
@@ -207,6 +217,8 @@ function marsDoom()
 	
 	marsRandomQAns=marsAnswers[marsPos];
 	
+	document.getElementById('outputMars').style.display = 'block';
+	
 	document.getElementById('outputMars').innerHTML=marsRandomQues;	
 }
 
@@ -243,6 +255,8 @@ function jupiterDoom()
 	
 	jupRandomQAns=jupAnswers[jupPos];
 	
+	document.getElementById('outputJupiter').style.display = 'block';
+	
 	document.getElementById('outputJupiter').innerHTML=jupRandomQues;	
 }
 
@@ -268,7 +282,7 @@ function saturnDoom()
 	satQuestions=new Array();
 	satQuestions[0]="Saturn is the second largest planet in the solar system. What is the largest planet in the solar system?";
 	satQuestions[1]="How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').";
-	satQuestions[2]="Who first observed Saturn\'s rings?";
+	satQuestions[2]="Who first observed Saturn's rings?";
 	satQuestions[3]="How many rings does Saturn have? Enter a number (i.e. '4', not 'four').";
   
 	satAnswers=["jupiter","62","galileo","7"];
@@ -278,6 +292,8 @@ function saturnDoom()
 	satRandomQues=satQuestions[satPos];
 	
 	satRandomQAns=satAnswers[satPos];
+	
+	document.getElementById('outputSaturn').style.display = 'block';
 	
 	document.getElementById('outputSaturn').innerHTML=satRandomQues;	
 }
@@ -315,6 +331,8 @@ function uranusDoom()
 	
 	uranusRandomQAns=uranusAnswers[uranusPos];
 	
+	document.getElementById('outputUranus').style.display = 'block';
+	
 	document.getElementById('outputUranus').innerHTML=uranusRandomQues;
 }
 
@@ -337,8 +355,8 @@ function uranusCheckAnswer()
 function neptuneDoom()
 {
 	nepQuestions=new Array();
-	nepQuestions[0]="How many moons does Neptune have? Enter a number (i.e. \'4\', not \'four\').";
-	nepQuestions[1]="What is the name of Neptune\'s major moon?";
+	nepQuestions[0]="How many moons does Neptune have? Enter a number (i.e. '4', not 'four').";
+	nepQuestions[1]="What is the name of Neptune's major moon?";
 	nepQuestions[2]="Although smaller in diameter to Uranus, Neptune has a greater _____. Fill in the blank.";
 	nepQuestions[3]="Neptune has only been passed by one spacecraft, Voyager 2 which flew by on the 25th of August ____. Fill in the blank";
   
@@ -349,6 +367,8 @@ function neptuneDoom()
 	nepRandomQues=nepQuestions[nepPos];
 	
 	nepRandomQAns=nepAnswers[nepPos];
+	
+	document.getElementById('outputNeptune').style.display = 'block';
 	
 	document.getElementById('outputNeptune').innerHTML=nepRandomQues;
 }
