@@ -19,7 +19,7 @@ function travelToPlanet()
 
   			 	else if (planet.toLowerCase()==='mars') {
 					nextPage(1,5);
-					earthDoom();
+					marsDoom();
 			 	}
 
 				 	else if (planet.toLowerCase()==='jupiter') {  
