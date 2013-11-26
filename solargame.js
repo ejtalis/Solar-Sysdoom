@@ -43,11 +43,7 @@ function correct()
 {
 	alert('Correct! Type in another name of a Planet to get the next piece of the device!');
 }      
-<<<<<<< HEAD
-
-=======
->>>>>>> Changes to both the html and js.
-
+ 
 function wrong()
 {
 	alert('Try Again!');
@@ -59,22 +55,18 @@ function displayPlanet(message)
 	document.getElementById('outputDiv0').innerHTML=message;  
 }
 
-<<<<<<< HEAD
 
 function nextPage(curr,next)
 {
-      var next, currPage, nextPage;
-=======
-function nextPage(curr, next) {
+      
       var currPage, nextPage;
 
->>>>>>> Changes to both the html and js.
-      currPage = document.getElementById('page' + curr);
-      nextPage = document.getElementById('page' + next);
+	currPage = document.getElementById('page' + curr);
+        nextPage = document.getElementById('page' + next);
       
       currPage.style.display = 'none';
       nextPage.style.display = 'block';
-<<<<<<< HEAD
+
 }
 
 
@@ -83,15 +75,13 @@ function startScreen()
 document.getElementById('page0').style.display = 'block';
 }
 
-=======
-    }
+   
 
     
 function startScreen() 
 {
       document.getElementById('page0').style.display = 'block';
 }
->>>>>>> Changes to both the html and js.
 
 
 function mercuryDoom()
@@ -128,10 +118,6 @@ function mercuryCheckAnswer()
 			wrong();
 		}
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> Changes to both the html and js.
 
 function venusDoom()
 {
@@ -149,14 +135,11 @@ function venusDoom()
 	
 	venusRandomQAns=venusAnswers[venusPos];
 	
-<<<<<<< HEAD
 	document.getElementById('outputVenus').innerHTML=venusRandomQues;	
 }
 
-=======
 	document.getElementById('outputDiv1').innerHTML=venusRandomQues;	
 }
->>>>>>> Changes to both the html and js.
 
 function venusCheckAnswer()
 {
@@ -172,10 +155,6 @@ function venusCheckAnswer()
 			wrong();
 		}
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> Changes to both the html and js.
 
 function earthDoom()
 {
@@ -193,15 +172,11 @@ function earthDoom()
 	
 	earthRandomQAns=earthAnswers[earthPos];
 	
-<<<<<<< HEAD
 	document.getElementById('outputEarth').innerHTML=earthRandomQues;
 }
 
-=======
-	document.getElementById('outputDiv1').innerHTML=earthRandomQues;	
-}
->>>>>>> Changes to both the html and js.
 
+		
 function earthCheckAnswer()
 {
    	userAns=document.getElementById('answerInput').value;
@@ -216,7 +191,6 @@ function earthCheckAnswer()
 			wrong();
 		}
 }
-<<<<<<< HEAD
 
 
 function marsDoom()
@@ -296,7 +270,7 @@ function saturnDoom()
 	satQuestions=new Array();
 	satQuestions[0]="Saturn is the second largest planet in the solar system. What is the largest planet in the solar system?";
 	satQuestions[1]="How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').";
-	satQuestions[2]="Who first observed Saturn's rings?";
+	satQuestions[2]="Who first observed Saturn\'s rings?";
 	satQuestions[3]="How many rings does Saturn have? Enter a number (i.e. '4', not 'four').";
   
 	satAnswers=["jupiter","62","galileo","7"];
@@ -333,7 +307,7 @@ function uranusDoom()
 	uranusQuestions[0]="Uranus was the first planet to be observed using a __________. Fill in the blank.";
 	uranusQuestions[1]="How many moons does Uranus have?";
 	uranusQuestions[2]="In what year was Uranus discovered?";
-	uranusQuestions[3]="All of Uranus' moons are named after characters from the works of William Shakespeare and Alexander ____. Fill in the blank.";
+	uranusQuestions[3]="All of Uranus\' moons are named after characters from the works of William Shakespeare and Alexander ____. Fill in the blank.";
   
 	uranusAnswers=["telescope","27","1781","pope"];
 	
@@ -365,8 +339,8 @@ function uranusCheckAnswer()
 function neptuneDoom()
 {
 	nepQuestions=new Array();
-	nepQuestions[0]="How many moons does Neptune have? Enter a number (i.e. '4', not 'four').";
-	nepQuestions[1]="What is the name of Neptune's major moon?";
+	nepQuestions[0]="How many moons does Neptune have? Enter a number (i.e. \'4\', not \'four\').";
+	nepQuestions[1]="What is the name of Neptune\'s major moon?";
 	nepQuestions[2]="Although smaller in diameter to Uranus, Neptune has a greater _____. Fill in the blank.";
 	nepQuestions[3]="Neptune has only been passed by one spacecraft, Voyager 2 which flew by on the 25th of August ____. Fill in the blank";
   
@@ -396,5 +370,3 @@ function neptuneCheckAnswer()
 			wrong();
 		}
 }
-=======
->>>>>>> Changes to both the html and js.
