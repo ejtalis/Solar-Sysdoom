@@ -58,7 +58,7 @@ function wrong()
   
  function displayPlanet(message)
 {
-	//document.getElementById('outputDiv0').innerHTML=message;  
+	document.getElementById('outputDiv0').innerHTML=message;  
 }
 
 
