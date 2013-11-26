@@ -50,10 +50,10 @@ function wrong()
 }   
    
   
-function displayPlanet(message)
-{
-	document.getElementById('outputDiv0').innerHTML=message;  
-}
+// function displayPlanet(message)
+//{
+	//document.getElementById('outputDiv0').innerHTML=message;  
+//}
 
 
 function nextPage(curr,next)
@@ -78,7 +78,8 @@ document.getElementById('page0').style.display = 'block';
    
 
     
-
+
+
 
 
 function mercuryDoom()
