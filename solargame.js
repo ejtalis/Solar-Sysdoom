@@ -65,13 +65,13 @@ function wrong()
 function nextPage(curr,next)
 {
       
-      var currPage, nextPage;
+	var currPage, nextPage;
 
 	currPage = document.getElementById('page' + curr);
         nextPage = document.getElementById('page' + next);
       
-      currPage.style.display = 'none';
-      nextPage.style.display = 'block';
+	currPage.style.display = 'none';
+	nextPage.style.display = 'block';
 
 }
 
@@ -88,9 +88,6 @@ var playerInfo = {
 };
     
 
-
-
-
 function mercuryDoom()
 {
 	mercQuestions=new Array();
@@ -99,13 +96,13 @@ function mercuryDoom()
 	mercQuestions[2]="What is the polar diameter of Mercury, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
 	mercQuestions[3]="Mercury be observed, from Earth, passing across the face of the Sun. This event is called a transit. How many times per century does this transit of Mercury occur? Enter a number (i.e. '4', not 'four').";
   
-	mercAnswers=["0","88","4879","17"];
+	var mercAnswers=["0","88","4879","17"];
 	
-	mercPos=RandomInt(0,3);
+	var mercPos=RandomInt(0,3);
 	
-	mercRandomQues=mercQuestions[mercPos];
+	var mercRandomQues=mercQuestions[mercPos];
 	
-	mercRandomQAns=mercAnswers[mercPos];
+	var mercRandomQAns=mercAnswers[mercPos];
 	
 	document.getElementById('outputMercury').style.display = 'block';
 	
@@ -115,7 +112,7 @@ function mercuryDoom()
 
 function mercuryCheckAnswer()
 {
-   	userAns=document.getElementById('answerInputMercury').value;
+   	var userAns=document.getElementById('answerInputMercury').value;
 	
 		if (userAns===mercRandomQAns) { 
 			 correct();
@@ -131,19 +128,19 @@ function mercuryCheckAnswer()
 
 function venusDoom()
 {
-	venusQuestions=new Array();
+	var venusQuestions=new Array();
 	venusQuestions[0]="Venus is the second brightest object in the night sky after what other object?";
 	venusQuestions[1]="How many Earth days does it take for Venus to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.";
 	venusQuestions[2]="How many moons does Venus have? Enter a number (i.e. '4', not 'four').";
 	venusQuestions[3]="What was the first country to land a man-made spacecraft on Venus?";
   
-	venusAnswers=["moon","225","0","soviet union"];
+	var venusAnswers=["moon","225","0","soviet union"];
 	
-	venusPos=RandomInt(0,3);
+	var venusPos=RandomInt(0,3);
 	
-	venusRandomQues=venusQuestions[venusPos];
+	var venusRandomQues=venusQuestions[venusPos];
 	
-	venusRandomQAns=venusAnswers[venusPos];
+	var venusRandomQAns=venusAnswers[venusPos];
 	
 	document.getElementById('outputVenus').style.display = 'block';
 	
@@ -153,7 +150,7 @@ function venusDoom()
 
 function venusCheckAnswer()
 {
-   	userAns=document.getElementById('answerInputVenus').value;
+   	var userAns=document.getElementById('answerInputVenus').value;
 	
 		if (userAns===venusRandomQAns) { 
 			 correct();
@@ -169,19 +166,19 @@ function venusCheckAnswer()
 
 function earthDoom()
 {
-	earthQuestions=new Array();
+	var earthQuestions=new Array();
 	earthQuestions[0]="The Earth's rotation is known to be changing. Is it slowing down or speeding up?";
 	earthQuestions[1]="Earth is the only planet not named after a ____. Fill in the blank.";
 	earthQuestions[2]="What is the equatorial diameter of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
 	earthQuestions[3]="What is the equatorial circumference of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
   
-	earthAnswers=["slowing down","god","12756","40030"];
+	var earthAnswers=["slowing down","god","12756","40030"];
 	
-	earthPos=RandomInt(0,3);
+	var earthPos=RandomInt(0,3);
 	
-	earthRandomQues=earthQuestions[earthPos];
+	var earthRandomQues=earthQuestions[earthPos];
 	
-	earthRandomQAns=earthAnswers[earthPos];
+	var earthRandomQAns=earthAnswers[earthPos];
 	
 	document.getElementById('outputEarth').style.display = 'block';
 	
@@ -192,7 +189,7 @@ function earthDoom()
 		
 function earthCheckAnswer()
 {
-   	userAns=document.getElementById('answerInputEarth').value;
+   	var userAns=document.getElementById('answerInputEarth').value;
 	
 		if (userAns===earthRandomQAns) { 
 			 correct();
@@ -209,19 +206,19 @@ function earthCheckAnswer()
 
 function marsDoom()
 {
-	marsQuestions=new Array();
+	var marsQuestions=new Array();
 	marsQuestions[0]="How many missions to Mars have been successful? Enter a number (i.e. '4', not 'four').";
 	marsQuestions[1]="Mars takes its name from the Roman god of what?";
 	marsQuestions[2]="How many moons does Mars have? Enter a number (i.e. '4', not 'four').";
 	marsQuestions[3]="Mars has the largest ____ storms in the solar system. Fill in the blank.";
   
-	marsAnswers=["16","war","2","dust"];
+	var marsAnswers=["16","war","2","dust"];
 	
-	marsPos=RandomInt(0,3);
+	var marsPos=RandomInt(0,3);
 	
-	marsRandomQues=marsQuestions[marsPos];
+	var marsRandomQues=marsQuestions[marsPos];
 	
-	marsRandomQAns=marsAnswers[marsPos];
+	var marsRandomQAns=marsAnswers[marsPos];
 	
 	document.getElementById('outputMars').style.display = 'block';
 	
@@ -231,7 +228,7 @@ function marsDoom()
 
 function marsCheckAnswer()
 {
-   	userAns=document.getElementById('answerInputMars').value;
+   	var userAns=document.getElementById('answerInputMars').value;
 	
 		if (userAns===marsRandomQAns) { 
 			 correct();
@@ -248,19 +245,19 @@ function marsCheckAnswer()
 
 function jupiterDoom()
 {
-	jupQuestions=new Array();
+	var jupQuestions=new Array();
 	jupQuestions[0]="Jupiter, along with the other 4 outer planets, is a ____ giant. Fill in the blank.";
 	jupQuestions[1]="How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').";
 	jupQuestions[2]="Which moon if Jupiter's is the largest moon in the solar system?";
 	jupQuestions[3]="What is the equatorial circumference of Jupiter, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
   
-	jupAnswers=["gas","67","ganymede","439264"];
+	var jupAnswers=["gas","67","ganymede","439264"];
 	
-	jupPos=RandomInt(0,3);
+	var jupPos=RandomInt(0,3);
 	
-	jupRandomQues=jupQuestions[jupPos];
+	var jupRandomQues=jupQuestions[jupPos];
 	
-	jupRandomQAns=jupAnswers[jupPos];
+	var jupRandomQAns=jupAnswers[jupPos];
 	
 	document.getElementById('outputJupiter').style.display = 'block';
 	
@@ -270,7 +267,7 @@ function jupiterDoom()
 
 function jupiterCheckAnswer()
 {
-   	userAns=document.getElementById('answerInputJupiter').value;
+   	var userAns=document.getElementById('answerInputJupiter').value;
 	
 		if (userAns===jupRandomQAns) { 
 			 correct();
@@ -287,19 +284,19 @@ function jupiterCheckAnswer()
 
 function saturnDoom()
 {
-	satQuestions=new Array();
+	var satQuestions=new Array();
 	satQuestions[0]="Saturn is the second largest planet in the solar system. What is the largest planet in the solar system?";
 	satQuestions[1]="How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').";
 	satQuestions[2]="Who first observed Saturn's rings?";
 	satQuestions[3]="How many rings does Saturn have? Enter a number (i.e. '4', not 'four').";
   
-	satAnswers=["jupiter","62","galileo","7"];
+	var satAnswers=["jupiter","62","galileo","7"];
 	
-	satPos=RandomInt(0,3);
+	var satPos=RandomInt(0,3);
 	
-	satRandomQues=satQuestions[satPos];
+	var satRandomQues=satQuestions[satPos];
 	
-	satRandomQAns=satAnswers[satPos];
+	var satRandomQAns=satAnswers[satPos];
 	
 	document.getElementById('outputSaturn').style.display = 'block';
 	
@@ -309,7 +306,7 @@ function saturnDoom()
 
 function saturnCheckAnswer()
 {
-   	userAns=document.getElementById('answerInputSaturn').value;
+   	var userAns=document.getElementById('answerInputSaturn').value;
 	
 		if (userAns===satRandomQAns) { 
 			 correct();
@@ -326,19 +323,19 @@ function saturnCheckAnswer()
 
 function uranusDoom()
 {
-	uranusQuestions=new Array();
+	var uranusQuestions=new Array();
 	uranusQuestions[0]="Uranus was the first planet to be observed using a __________. Fill in the blank.";
 	uranusQuestions[1]="How many moons does Uranus have?";
 	uranusQuestions[2]="In what year was Uranus discovered?";
 	uranusQuestions[3]="All of Uranus\' moons are named after characters from the works of William Shakespeare and Alexander ____. Fill in the blank.";
   
-	uranusAnswers=["telescope","27","1781","pope"];
+	var uranusAnswers=["telescope","27","1781","pope"];
 	
-	uranusPos=RandomInt(0,3);
+	var uranusPos=RandomInt(0,3);
 	
-	uranusRandomQues=uranusQuestions[uranusPos];
+	var uranusRandomQues=uranusQuestions[uranusPos];
 	
-	uranusRandomQAns=uranusAnswers[uranusPos];
+	var uranusRandomQAns=uranusAnswers[uranusPos];
 	
 	document.getElementById('outputUranus').style.display = 'block';
 	
@@ -347,7 +344,7 @@ function uranusDoom()
 
 function uranusCheckAnswer()
 {
-   	userAns=document.getElementById('answerInputUranus').value;
+   	var userAns=document.getElementById('answerInputUranus').value;
 	
 		if (userAns===uranusRandomQAns) { 
 			 correct();
@@ -364,19 +361,19 @@ function uranusCheckAnswer()
 
 function neptuneDoom()
 {
-	nepQuestions=new Array();
+	var nepQuestions=new Array();
 	nepQuestions[0]="How many moons does Neptune have? Enter a number (i.e. '4', not 'four').";
 	nepQuestions[1]="What is the name of Neptune's major moon?";
 	nepQuestions[2]="Although smaller in diameter to Uranus, Neptune has a greater _____. Fill in the blank.";
 	nepQuestions[3]="Neptune has only been passed by one spacecraft, Voyager 2 which flew by on the 25th of August ____. Fill in the blank";
   
-	nepAnswers=["14","tritan","mass","1989"];
+	var nepAnswers=["14","tritan","mass","1989"];
 	
-	nepPos=RandomInt(0,3);
+	var nepPos=RandomInt(0,3);
 	
-	nepRandomQues=nepQuestions[nepPos];
+	var nepRandomQues=nepQuestions[nepPos];
 	
-	nepRandomQAns=nepAnswers[nepPos];
+	var nepRandomQAns=nepAnswers[nepPos];
 	
 	document.getElementById('outputNeptune').style.display = 'block';
 	
@@ -386,7 +383,7 @@ function neptuneDoom()
 
 function neptuneCheckAnswer()
 {
-   	userAns=document.getElementById('answerInputNeptune').value;
+   	var userAns=document.getElementById('answerInputNeptune').value;
 	
 		if (userAns===nepRandomQAns) { 
 			 correct();
