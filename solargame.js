@@ -98,6 +98,8 @@ function mercuryDoom()
 	
 	mercRandomQAns=mercAnswers[mercPos];
 	
+	document.getElementById('outputMercury').style.display = 'block';
+	
 	document.getElementById('outputMercury').innerHTML=mercRandomQues;	
 }
 
