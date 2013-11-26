@@ -78,14 +78,14 @@ function nextPage(curr,next)
 
 function startScreen()
 {
-document.getElementById('page10').style.display = 'block';
+document.getElementById('page0').style.display = 'block';
 }
 
    
-var playerInfo = {
-	teamname:document.getElementById('teamNameInput').value;
-	spaceship:document.getElementById('shipNameInput').value;
-};
+//var playerInfo = {
+	//teamname:document.getElementById('teamNameInput').value;
+	//spaceship:document.getElementById('shipNameInput').value;
+//};
     
 
 function mercuryDoom()
@@ -102,7 +102,7 @@ function mercuryDoom()
 	
 	var mercRandomQues=mercQuestions[mercPos];
 	
-	var mercRandomQAns=mercAnswers[mercPos];
+	 mercRandomQAns=mercAnswers[mercPos];
 	
 	document.getElementById('outputMercury').style.display = 'block';
 	
@@ -140,7 +140,7 @@ function venusDoom()
 	
 	var venusRandomQues=venusQuestions[venusPos];
 	
-	var venusRandomQAns=venusAnswers[venusPos];
+	 venusRandomQAns=venusAnswers[venusPos];
 	
 	document.getElementById('outputVenus').style.display = 'block';
 	
@@ -178,7 +178,7 @@ function earthDoom()
 	
 	var earthRandomQues=earthQuestions[earthPos];
 	
-	var earthRandomQAns=earthAnswers[earthPos];
+	 earthRandomQAns=earthAnswers[earthPos];
 	
 	document.getElementById('outputEarth').style.display = 'block';
 	
@@ -218,7 +218,7 @@ function marsDoom()
 	
 	var marsRandomQues=marsQuestions[marsPos];
 	
-	var marsRandomQAns=marsAnswers[marsPos];
+	 marsRandomQAns=marsAnswers[marsPos];
 	
 	document.getElementById('outputMars').style.display = 'block';
 	
@@ -257,7 +257,7 @@ function jupiterDoom()
 	
 	var jupRandomQues=jupQuestions[jupPos];
 	
-	var jupRandomQAns=jupAnswers[jupPos];
+	 jupRandomQAns=jupAnswers[jupPos];
 	
 	document.getElementById('outputJupiter').style.display = 'block';
 	
@@ -296,7 +296,7 @@ function saturnDoom()
 	
 	var satRandomQues=satQuestions[satPos];
 	
-	var satRandomQAns=satAnswers[satPos];
+	 satRandomQAns=satAnswers[satPos];
 	
 	document.getElementById('outputSaturn').style.display = 'block';
 	
@@ -335,7 +335,7 @@ function uranusDoom()
 	
 	var uranusRandomQues=uranusQuestions[uranusPos];
 	
-	var uranusRandomQAns=uranusAnswers[uranusPos];
+	 uranusRandomQAns=uranusAnswers[uranusPos];
 	
 	document.getElementById('outputUranus').style.display = 'block';
 	
@@ -373,7 +373,7 @@ function neptuneDoom()
 	
 	var nepRandomQues=nepQuestions[nepPos];
 	
-	var nepRandomQAns=nepAnswers[nepPos];
+	 nepRandomQAns=nepAnswers[nepPos];
 	
 	document.getElementById('outputNeptune').style.display = 'block';
 	
