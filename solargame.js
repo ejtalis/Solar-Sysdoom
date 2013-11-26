@@ -78,7 +78,7 @@ function nextPage(curr,next)
 
 function startScreen()
 {
-document.getElementById('page0').style.display = 'block';
+document.getElementById('page10').style.display = 'block';
 }
 
    
