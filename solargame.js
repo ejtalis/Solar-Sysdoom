@@ -44,11 +44,20 @@ function travelToPlanet()
 								  	  }
 }
         
+        
 function changeStoryDiv()
 {
 	document.getElementById('storyDiv').style.display = 'block';
-	// document.getElementById('storyDiv').innerHTML = "";
+	document.getElementById('storyDiv').innerHTML = "hello?";
 }
+ 
+ 
+function proceedFromPage0()
+{
+	nextPage(0,1);
+	changeStoryDiv();
+}
+ 
     
 function correct()
 {
