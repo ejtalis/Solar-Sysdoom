@@ -56,10 +56,10 @@ function wrong()
 }   
    
   
-// function displayPlanet(message)
-//{
+ function displayPlanet(message)
+{
 	//document.getElementById('outputDiv0').innerHTML=message;  
-//}
+}
 
 
 function nextPage(curr,next)
@@ -112,7 +112,7 @@ function mercuryDoom()
 
 function mercuryCheckAnswer()
 {
-   	userAns=document.getElementById('answerInput').value;
+   	userAns=document.getElementById('answerInputMercury').value;
 	
 		if (userAns===mercRandomQAns) { 
 			 correct();
@@ -150,7 +150,7 @@ function venusDoom()
 
 function venusCheckAnswer()
 {
-   	userAns=document.getElementById('answerInput').value;
+   	userAns=document.getElementById('answerInputVenus').value;
 	
 		if (userAns===venusRandomQAns) { 
 			 correct();
@@ -189,7 +189,7 @@ function earthDoom()
 		
 function earthCheckAnswer()
 {
-   	userAns=document.getElementById('answerInput').value;
+   	userAns=document.getElementById('answerInputEarth').value;
 	
 		if (userAns===earthRandomQAns) { 
 			 correct();
@@ -228,7 +228,7 @@ function marsDoom()
 
 function marsCheckAnswer()
 {
-   	userAns=document.getElementById('answerInput').value;
+   	userAns=document.getElementById('answerInputMars').value;
 	
 		if (userAns===marsRandomQAns) { 
 			 correct();
@@ -267,7 +267,7 @@ function jupiterDoom()
 
 function jupiterCheckAnswer()
 {
-   	userAns=document.getElementById('answerInput').value;
+   	userAns=document.getElementById('answerInputJupiter').value;
 	
 		if (userAns===jupRandomQAns) { 
 			 correct();
@@ -306,7 +306,7 @@ function saturnDoom()
 
 function saturnCheckAnswer()
 {
-   	userAns=document.getElementById('answerInput').value;
+   	userAns=document.getElementById('answerInputSaturn').value;
 	
 		if (userAns===satRandomQAns) { 
 			 correct();
@@ -344,7 +344,7 @@ function uranusDoom()
 
 function uranusCheckAnswer()
 {
-   	userAns=document.getElementById('answerInput').value;
+   	userAns=document.getElementById('answerInputUranus').value;
 	
 		if (userAns===uranusRandomQAns) { 
 			 correct();
@@ -383,7 +383,7 @@ function neptuneDoom()
 
 function neptuneCheckAnswer()
 {
-   	userAns=document.getElementById('answerInput').value;
+   	userAns=document.getElementById('answerInputNeptune').value;
 	
 		if (userAns===nepRandomQAns) { 
 			 correct();
