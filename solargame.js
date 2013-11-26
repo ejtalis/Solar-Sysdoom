@@ -78,10 +78,7 @@ document.getElementById('page0').style.display = 'block';
    
 
     
-function startScreen() 
-{
-      document.getElementById('page0').style.display = 'block';
-}
+
 
 
 function mercuryDoom()
@@ -136,9 +133,7 @@ function venusDoom()
 	venusRandomQAns=venusAnswers[venusPos];
 	
 	document.getElementById('outputVenus').innerHTML=venusRandomQues;	
-}
 
-	document.getElementById('outputDiv1').innerHTML=venusRandomQues;	
 }
 
 function venusCheckAnswer()
