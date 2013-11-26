@@ -116,6 +116,7 @@ function mercuryCheckAnswer()
 	
 		if (userAns===mercRandomQAns) { 
 			 correct();
+			nextPage(2,1);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -153,6 +154,7 @@ function venusCheckAnswer()
 	
 		if (userAns===venusRandomQAns) { 
 			 correct();
+			nextPage(3,1);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -191,6 +193,7 @@ function earthCheckAnswer()
 	
 		if (userAns===earthRandomQAns) { 
 			 correct();
+			nextPage(4,1);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -229,6 +232,7 @@ function marsCheckAnswer()
 	
 		if (userAns===marsRandomQAns) { 
 			 correct();
+			nextPage(5,1);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -267,6 +271,7 @@ function jupiterCheckAnswer()
 	
 		if (userAns===jupRandomQAns) { 
 			 correct();
+			nextPage(6,1);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -305,6 +310,7 @@ function saturnCheckAnswer()
 	
 		if (userAns===satRandomQAns) { 
 			 correct();
+			nextPage(7,1);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -342,6 +348,7 @@ function uranusCheckAnswer()
 	
 		if (userAns===uranusRandomQAns) { 
 			 correct();
+			nextPage(8,1);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
@@ -380,6 +387,7 @@ function neptuneCheckAnswer()
 	
 		if (userAns===nepRandomQAns) { 
 			 correct();
+			nextPage(9,1);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
