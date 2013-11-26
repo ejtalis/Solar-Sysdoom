@@ -44,6 +44,11 @@ function travelToPlanet()
 								  	  }
 }
         
+function changeStoryDiv()
+{
+	document.getElementById('storyDiv').style.display = 'block';
+	// document.getElementById('storyDiv').innerHTML = "";
+}
     
 function correct()
 {
