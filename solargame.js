@@ -58,7 +58,7 @@ function wrong()
   
  function displayPlanet(message)
 {
-	document.getElementById('outputDiv0').innerHTML=message;  
+	//document.getElementById('outputDiv0').innerHTML=message;  
 }
 
 
@@ -80,6 +80,15 @@ function startScreen()
 {
 document.getElementById('page10').style.display = 'block';
 }
+
+   
+var playerInfo = {
+	teamname:document.getElementById('teamNameInput').value;
+	spaceship:document.getElementById('shipNameInput').value;
+};
+    
+
+
 
 
 function mercuryDoom()
@@ -120,7 +129,6 @@ function mercuryCheckAnswer()
 		}
 }
 
-
 function venusDoom()
 {
 	venusQuestions=new Array();
@@ -143,7 +151,6 @@ function venusDoom()
 
 }
 
-
 function venusCheckAnswer()
 {
    	userAns=document.getElementById('answerInputVenus').value;
@@ -159,7 +166,6 @@ function venusCheckAnswer()
 			wrong();
 		}
 }
-
 
 function earthDoom()
 {
@@ -338,7 +344,6 @@ function uranusDoom()
 	
 	document.getElementById('outputUranus').innerHTML=uranusRandomQues;
 }
-
 
 function uranusCheckAnswer()
 {
