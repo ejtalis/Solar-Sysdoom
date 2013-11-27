@@ -51,9 +51,9 @@ var playerInfo;
 function changeStoryDiv()
 {
 	document.getElementById('storyDiv').style.display = 'block';
-	playerInfo= {
-		teamname:document.getElementById('teamNameInput').value;
-		spaceship:document.getElementById('shipNameInput').value;
+//	playerInfo= {
+	//	teamname:document.getElementById('teamNameInput').value;
+	//	spaceship:document.getElementById('shipNameInput').value;
 		};
 	document.getElementById('storyDiv').innerHTML = "The year is 3013 and the world is in grave danger. The player  the world as we know it, and the entire solar system, will be destroyed unless you collect all the pieces of a device that will keep the sun shining. Otherwise the sun will die out, and the solar system along with all its inhabitance, will cease to exist. The player has to go to each planet in the solar system, and then answer questions about that planet in order to get each piece of the device, and upgrade their vessel, so they can prepare for the final voyage to the sun. If the player goes to the sun too early they will be disintegrated and fail your mission. Otherwise, the player is allowed to freely go to each planet in any order, and can retry the questions about each planet. Although, if the player gets the questions wrong in the final mission to the sun, they have one of two options: sacrifice themselves to help get the device back into its proper position, or go to another nearby solar system to a planet that can also sustain life (possibly the one that the aliens live on) using the device as a power source, thus leaving earth and the rest of the solar system to their doom. The player will also have the option of naming their vessel and team. The player will also find out that the pieces of the device were placed on each planet, after conflicts in the solar system with aliens, in case they tried to destroy the sun. But now because of an unexpected chemical imbalance in the fusion reaction that the sun undergoes, it is up to the player to save the solar system!";
 }
