@@ -42,7 +42,7 @@ function travelToPlanet()
           								 neptuneDoom();
         						 	}
 									else if (planet.toLowerCase()==='sun') {             
-	   							   		// checkPlanetNumber();
+	   							   		checkPlanetNumber();
 								  	  }
 										else {             
 	   										displayPlanet('You cannot travel there!');           
@@ -66,7 +66,6 @@ function changeStoryDiv()
 function proceedFromPage0()
 {
 	nextPage(0,1);
-	
 	changeStoryDiv();
 }
  
@@ -122,7 +121,7 @@ function checkPlanetNumber()
 		nextPage(2,11);
 	}
 	else {
-		displayPlanet('You cannot travel there!');
+		displayPlanet('You cannot travel to the sun yet, or you will be killed! Please continue to visit each planet and collect all pieces of the device');
 	}
 }
 
@@ -168,6 +167,8 @@ function mercuryCheckAnswer()
 
 function venusDoom()
 {
+	addPlanet();
+	
 	var venusQuestions=new Array();
 	venusQuestions[0]="Venus is the second brightest object in the night sky after what other object?";
 	venusQuestions[1]="How many Earth days does it take for Venus to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.";
@@ -206,6 +207,8 @@ function venusCheckAnswer()
 
 function earthDoom()
 {
+	addPlanet();
+	
 	var earthQuestions=new Array();
 	earthQuestions[0]="The Earth's rotation is known to be changing. Is it slowing down or speeding up?";
 	earthQuestions[1]="Earth is the only planet not named after a ____. Fill in the blank.";
@@ -246,6 +249,8 @@ function earthCheckAnswer()
 
 function marsDoom()
 {
+	addPlanet();
+	
 	var marsQuestions=new Array();
 	marsQuestions[0]="How many missions to Mars have been successful? Enter a number (i.e. '4', not 'four').";
 	marsQuestions[1]="Mars takes its name from the Roman god of what?";
@@ -285,6 +290,8 @@ function marsCheckAnswer()
 
 function jupiterDoom()
 {
+	addPlanet();
+	
 	var jupQuestions=new Array();
 	jupQuestions[0]="Jupiter, along with the other 4 outer planets, is a ____ giant. Fill in the blank.";
 	jupQuestions[1]="How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').";
@@ -324,6 +331,8 @@ function jupiterCheckAnswer()
 
 function saturnDoom()
 {
+	addPlanet();
+	
 	var satQuestions=new Array();
 	satQuestions[0]="Saturn is the second largest planet in the solar system. What is the largest planet in the solar system?";
 	satQuestions[1]="How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').";
@@ -363,6 +372,8 @@ function saturnCheckAnswer()
 
 function uranusDoom()
 {
+	addPlanet();
+	
 	var uranusQuestions=new Array();
 	uranusQuestions[0]="Uranus was the first planet to be observed using a __________. Fill in the blank.";
 	uranusQuestions[1]="How many moons does Uranus have?";
@@ -401,6 +412,8 @@ function uranusCheckAnswer()
 
 function neptuneDoom()
 {
+	addPlanet();
+	
 	var nepQuestions=new Array();
 	nepQuestions[0]="How many moons does Neptune have? Enter a number (i.e. '4', not 'four').";
 	nepQuestions[1]="What is the name of Neptune's major moon?";
