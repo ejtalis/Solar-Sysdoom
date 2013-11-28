@@ -1,6 +1,8 @@
 function travelToPlanet()
 {
 	planet=document.getElementById('actionInput').value;
+	
+	numberOfPlanets=new Array(); 
  
 	if (planet.toLowerCase()==='mercury') {
  	 	nextPage(2, 3); 
@@ -39,9 +41,12 @@ function travelToPlanet()
           								 nextPage(2,10)
           								 neptuneDoom();
         						 	}
-									  else {             
-	   									displayPlanet('You cannot travel there!');           
+									else if (planet.toLowerCase()==='sun') {             
+	   							   		// checkPlanetNumber();
 								  	  }
+										else {             
+	   										displayPlanet('You cannot travel there!');           
+								  		 }
 }
         
         
@@ -103,8 +108,28 @@ document.getElementById('page0').style.display = 'block';
 }
 
 
+function addPlanet()
+{
+	planetNumber=numberOfPlanets.length;
+	var nextPlanet=(planetNumber + 1);
+	var numberOfPlanets[nextPlanet]="1";
+}
+
+
+function checkPlanetNumber()
+{
+	if (planetNumber===8) {
+		nextPage(2,11);
+	}
+	else {
+		displayPlanet('You cannot travel there!');
+	}
+}
+
+
 function mercuryDoom()
 {
+	addPlanet();
 	mercQuestions=new Array();
 	mercQuestions[0]="How many moons does Mercury have? Enter a number (i.e. '4' not 'four').";
 	mercQuestions[1]="How many Earth days does it take for Mercury to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.";
