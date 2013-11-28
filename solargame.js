@@ -3,7 +3,6 @@ function travelToPlanet()
 	planet=document.getElementById('actionInput').value;
 	
 	numberOfPlanets=new Array(); 
-	numberOfPlanets[0]="1";
 	
 	if (planet.toLowerCase()==='mercury') {
  	 	nextPage(2, 3); 
@@ -120,7 +119,7 @@ function checkPlanetNumber()
 {
 	var planetNumber=numberOfPlanets.length;
 	
-	if (planetNumber===9) {
+	if (planetNumber===8) {
 		nextPage(2,11);
 	}
 	else {
