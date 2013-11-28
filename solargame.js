@@ -168,6 +168,7 @@ function mercuryCheckAnswer()
 		}
 }
 
+
 function venusDoom()
 {
 	addPlanet();
