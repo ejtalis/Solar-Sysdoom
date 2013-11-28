@@ -110,8 +110,8 @@ document.getElementById('page0').style.display = 'block';
 function addPlanet()
 {
 	planetNumber=numberOfPlanets.length;
-	var nextPlanet=(planetNumber + 1);
-	var numberOfPlanets[nextPlanet]="1";
+	nextPlanet=(planetNumber + 1);
+	numberOfPlanets[nextPlanet]="1";
 }
 
 
