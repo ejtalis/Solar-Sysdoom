@@ -109,16 +109,14 @@ document.getElementById('page0').style.display = 'block';
 
 function addPlanet()
 {
-	var planetNumber=numberOfPlanets.length;
-	nextPlanet=(planetNumber + 1);
+	planetNumber=numberOfPlanets.length;
+	nextPlanet=parseFloat(planetNumber + 1);
 	numberOfPlanets[nextPlanet]="1";
 }
 
 
 function checkPlanetNumber()
 {
-	var planetNumber=numberOfPlanets.length;
-	
 	if (planetNumber===8) {
 		nextPage(2,11);
 	}
