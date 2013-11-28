@@ -117,9 +117,8 @@ function addPlanet()
 
 function checkPlanetNumber()
 {
-	var planetNumber=numberOfPlanets.length;
 	
-	if (planetNumber===8) {
+	if (numberOfPlanets.length===8) {
 		nextPage(2,11);
 	}
 	else {
