@@ -3,7 +3,8 @@ function travelToPlanet()
 	planet=document.getElementById('actionInput').value;
 	
 	numberOfPlanets=new Array(); 
- 
+	numberOfPlanets[0]="1";
+	
 	if (planet.toLowerCase()==='mercury') {
  	 	nextPage(2, 3); 
   		mercuryDoom();    
@@ -117,7 +118,7 @@ function addPlanet()
 
 function checkPlanetNumber()
 {
-	if (planetNumber===8) {
+	if (planetNumber===9) {
 		nextPage(2,11);
 	}
 	else {
