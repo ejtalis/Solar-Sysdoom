@@ -109,7 +109,7 @@ document.getElementById('page0').style.display = 'block';
 
 function addPlanet()
 {
-	planetNumber=numberOfPlanets.length;
+	var planetNumber=numberOfPlanets.length;
 	nextPlanet=parseFloat(planetNumber + 1);
 	numberOfPlanets[nextPlanet]="1";
 }
@@ -117,6 +117,8 @@ function addPlanet()
 
 function checkPlanetNumber()
 {
+	var planetNumber=numberOfPlanets.length;
+	
 	if (planetNumber===8) {
 		nextPage(2,11);
 	}
@@ -129,6 +131,7 @@ function checkPlanetNumber()
 function mercuryDoom()
 {
 	addPlanet();
+	
 	mercQuestions=new Array();
 	mercQuestions[0]="How many moons does Mercury have? Enter a number (i.e. '4' not 'four').";
 	mercQuestions[1]="How many Earth days does it take for Mercury to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.";
