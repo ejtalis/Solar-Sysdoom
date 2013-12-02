@@ -122,7 +122,7 @@ function checkPlanetNumber()
 		nextPage(2,11);
 	}
 	else {
-		displayPlanet('You cannot travel to the sun yet, or you will be killed! Please continue to visit each planet and collect all pieces of the device');
+		displayPlanet('You cannot travel to the sun yet, or you will be killed! Please visit each planet and collect all pieces of the device');
 	}
 }
 
