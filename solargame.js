@@ -334,7 +334,7 @@ function saturnDoom()
 {	
 	var satQuestions=new Array();
 	satQuestions[0]="Saturn is the second largest planet in the solar system. What is the largest planet in the solar system?";
-	satQuestions[1]="How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').";
+	satQuestions[1]="How many moons does Saturn have? Enter a number (i.e. '4', not 'four').";
 	satQuestions[2]="Who first observed Saturn's rings?";
 	satQuestions[3]="How many rings does Saturn have? Enter a number (i.e. '4', not 'four').";
   
