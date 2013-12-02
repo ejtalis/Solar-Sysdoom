@@ -295,7 +295,7 @@ function jupiterDoom()
 	var jupQuestions=new Array();
 	jupQuestions[0]="Jupiter, along with the other 4 outer planets, is a ____ giant. Fill in the blank.";
 	jupQuestions[1]="How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').";
-	jupQuestions[2]="Which moon if Jupiter's is the largest moon in the solar system?";
+	jupQuestions[2]="Which moon of Jupiter's is the largest moon in the solar system?";
 	jupQuestions[3]="What is the equatorial circumference of Jupiter, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
   
 	var jupAnswers=["gas","67","ganymede","439264"];
