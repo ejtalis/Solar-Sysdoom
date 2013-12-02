@@ -118,13 +118,19 @@ function addPlanet()
 function checkPlanetNumber()
 {
 	
-	if (numberOfPlanets.length===8) {
-		nextPage(2,11);
+	if (numberOfPlanets.length>=8) {
+		goToSun();
 	}
 	else {
 
 		alert('You cannot travel to the sun yet, or you will be killed! Please visit each planet and collect all pieces of the device.');		
 	}
+}
+
+
+function goToSun()
+{
+	nextPage(2,11);
 }
 
 
