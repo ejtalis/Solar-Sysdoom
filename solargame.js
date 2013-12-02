@@ -123,7 +123,7 @@ function checkPlanetNumber()
 	}
 	else {
 
-		alert(‘You cannot travel to the sun yet, or you will be killed! Please visit each planet and collect all pieces of the device.’);		
+		alert('You cannot travel to the sun yet, or you will be killed! Please visit each planet and collect all pieces of the device.');		
 	}
 }
 
