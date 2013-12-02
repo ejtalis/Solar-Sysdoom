@@ -110,7 +110,7 @@ document.getElementById('page0').style.display = 'block';
 function addPlanet()
 {
 	var planetNumber=numberOfPlanets.length;
-	nextPlanet=parseFloat(planetNumber + 1);
+	nextPlanet=(planetNumber + 1);
 	numberOfPlanets[nextPlanet]="1";
 }
 
@@ -129,7 +129,6 @@ function checkPlanetNumber()
 
 function mercuryDoom()
 {
-	addPlanet();
 	
 	mercQuestions=new Array();
 	mercQuestions[0]="How many moons does Mercury have? Enter a number (i.e. '4' not 'four').";
@@ -157,6 +156,7 @@ function mercuryCheckAnswer()
 	
 		if (userAns===mercRandomQAns) { 
 			 correct();
+			addPlanet();
 			nextPage(3,2);
 		}
 		else if (userAns==='') {
@@ -170,8 +170,7 @@ function mercuryCheckAnswer()
 
 function venusDoom()
 {
-	addPlanet();
-	
+
 	var venusQuestions=new Array();
 	venusQuestions[0]="Venus is the second brightest object in the night sky after what other object?";
 	venusQuestions[1]="How many Earth days does it take for Venus to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.";
@@ -198,6 +197,7 @@ function venusCheckAnswer()
 	
 		if (userAns===venusRandomQAns) { 
 			 correct();
+			addPlanet();
 			nextPage(4,2);
 		}
 		else if (userAns==='') {
@@ -209,9 +209,7 @@ function venusCheckAnswer()
 }
 
 function earthDoom()
-{
-	addPlanet();
-	
+{	
 	var earthQuestions=new Array();
 	earthQuestions[0]="The Earth's rotation is known to be changing. Is it slowing down or speeding up?";
 	earthQuestions[1]="Earth is the only planet not named after a ____. Fill in the blank.";
@@ -239,6 +237,7 @@ function earthCheckAnswer()
 	
 		if (userAns===earthRandomQAns) { 
 			 correct();
+			addPlanet();
 			nextPage(5,2);
 		}
 		else if (userAns==='') {
@@ -251,9 +250,7 @@ function earthCheckAnswer()
 
 
 function marsDoom()
-{
-	addPlanet();
-	
+{	
 	var marsQuestions=new Array();
 	marsQuestions[0]="How many missions to Mars have been successful? Enter a number (i.e. '4', not 'four').";
 	marsQuestions[1]="Mars takes its name from the Roman god of what?";
@@ -280,6 +277,7 @@ function marsCheckAnswer()
 	
 		if (userAns===marsRandomQAns) { 
 			 correct();
+			addPlanet();
 			nextPage(6,2);
 		}
 		else if (userAns==='') {
@@ -292,9 +290,7 @@ function marsCheckAnswer()
 
 
 function jupiterDoom()
-{
-	addPlanet();
-	
+{	
 	var jupQuestions=new Array();
 	jupQuestions[0]="Jupiter, along with the other 4 outer planets, is a ____ giant. Fill in the blank.";
 	jupQuestions[1]="How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').";
@@ -321,6 +317,7 @@ function jupiterCheckAnswer()
 	
 		if (userAns===jupRandomQAns) { 
 			 correct();
+			addPlanet();
 			nextPage(7,2);
 		}
 		else if (userAns==='') {
@@ -333,9 +330,7 @@ function jupiterCheckAnswer()
 
 
 function saturnDoom()
-{
-	addPlanet();
-	
+{	
 	var satQuestions=new Array();
 	satQuestions[0]="Saturn is the second largest planet in the solar system. What is the largest planet in the solar system?";
 	satQuestions[1]="How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').";
@@ -362,6 +357,7 @@ function saturnCheckAnswer()
 	
 		if (userAns===satRandomQAns) { 
 			 correct();
+			addPlanet();
 			nextPage(8,2);
 		}
 		else if (userAns==='') {
@@ -375,8 +371,6 @@ function saturnCheckAnswer()
 
 function uranusDoom()
 {
-	addPlanet();
-	
 	var uranusQuestions=new Array();
 	uranusQuestions[0]="Uranus was the first planet to be observed using a __________. Fill in the blank.";
 	uranusQuestions[1]="How many moons does Uranus have?";
@@ -402,6 +396,7 @@ function uranusCheckAnswer()
 	
 		if (userAns===uranusRandomQAns) { 
 			 correct();
+			addPlanet();
 			nextPage(9,2);
 		}
 		else if (userAns==='') {
@@ -414,9 +409,7 @@ function uranusCheckAnswer()
 
 
 function neptuneDoom()
-{
-	addPlanet();
-	
+{	
 	var nepQuestions=new Array();
 	nepQuestions[0]="How many moons does Neptune have? Enter a number (i.e. '4', not 'four').";
 	nepQuestions[1]="What is the name of Neptune's major moon?";
@@ -443,6 +436,7 @@ function neptuneCheckAnswer()
 	
 		if (userAns===nepRandomQAns) { 
 			 correct();
+			addPlanet();
 			nextPage(10,2);
 		}
 		else if (userAns==='') {
