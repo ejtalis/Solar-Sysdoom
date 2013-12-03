@@ -108,7 +108,7 @@ document.getElementById('page0').style.display = 'block';
 
 function addPlanet(planName)
 {
-	var planetNumber=numberOfPlanets.length;
+	planetNumber=numberOfPlanets.length;
 	nextPlanet=(planetNumber + 1);
 	numberOfPlanets[nextPlanet]=planName;
 }
@@ -117,7 +117,7 @@ function addPlanet(planName)
 function checkPlanetNumber()
 {
 	
-	if (numberOfPlanets.length===8) {
+	if (planetNumber===8) {
 		goToSun();
 	}
 	else {
