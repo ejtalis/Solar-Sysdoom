@@ -3,8 +3,7 @@ function travelToPlanet()
 	planet=document.getElementById('actionInput').value;
 	
 	if (planet.toLowerCase()==='mercury') {
- 	 	nextPage(2, 3); 
-  		mercuryDoom();    
+ 	 	mercuryGo();   
  	 }   
 
 		else if (planet.toLowerCase()==='venus') {
@@ -47,7 +46,18 @@ function travelToPlanet()
 								  		 }
 }
         
-        
+function mercuryGo()
+{
+	theIndex=numberOfPlanets.indexOf(' Mercury');
+	if (theIndex===-1) {
+		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
+	}
+	else {
+	nextPage(2, 3); 
+  	mercuryDoom();   
+	}
+}
+
 
 function changeStoryDiv()
 {
