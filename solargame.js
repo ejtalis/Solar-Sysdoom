@@ -151,7 +151,7 @@ function giveLength(divName)
 	
 	document.getElementById(divName).style.display = 'block';
 	
-	document.getElementById(divName).innerHTML=theLength;
+	document.getElementById(divName).innerHTML=numberOfPlanets;
 }
 
 
