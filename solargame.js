@@ -7,36 +7,29 @@ function travelToPlanet()
  	 }   
 
 		else if (planet.toLowerCase()==='venus') {
-           		nextPage(2,4);
-			venusDoom();     
+           		venusGo();    
 		}
 	 
 	 		else if (planet.toLowerCase()==='earth') {         
-   	   			nextPage(2,5);
-   	   			earthDoom();
+   	   			earthGo();
  			}
 
   			 	else if (planet.toLowerCase()==='mars') {
-					nextPage(2,6);
-					marsDoom();
+					marsGo();
 			 	}
 
 				 	else if (planet.toLowerCase()==='jupiter') {  
-          					 nextPage(2,7);
-          					 jupiterDoom();
+          					 jupiterGo();
   				 	}
 	 					else if (planet.toLowerCase()==='saturn') {
-           						nextPage(2,8);
-           						saturnDoom();
+           						saturnGo();
 						}
 							 else if (planet.toLowerCase()==='uranus') {   
-   								 nextPage(2,9);
-   								 uranusDoom();
+   								uranusGo();
  						 	 } 
 
 							 	else if (planet.toLowerCase()==='neptune') {  
-          								 nextPage(2,10)
-          								 neptuneDoom();
+          								 neptuneGo();
         						 	}
 									else if (planet.toLowerCase()==='sun') {             
 	   							   		checkPlanetNumber();
@@ -48,10 +41,101 @@ function travelToPlanet()
         
 function mercuryGo()
 {
-	theIndex=numberOfPlanets.indexOf(' Mercury');
+	var theIndex=numberOfPlanets.indexOf(' Mercury');
 	if (theIndex===-1) {
 		nextPage(2, 3); 
   		mercuryDoom();   	
+	}
+	else {
+		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
+	}
+}
+
+
+function venusGo()
+{
+	var theIndex=numberOfPlanets.indexOf(' Venus');
+	if (theIndex===-1) {
+		nextPage(2,4);
+		venusDoom();  		
+	}
+	else {
+		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
+	}
+}
+
+
+function earthGo()
+{
+	var theIndex=numberOfPlanets.indexOf(' Earth');
+	if (theIndex===-1) {
+		nextPage(2,5);
+   	   	earthDoom();  		
+	}
+	else {
+		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
+	}
+}
+
+
+function marsGo()
+{
+	var theIndex=numberOfPlanets.indexOf(' Mars');
+	if (theIndex===-1) {
+		nextPage(2,6);
+		marsDoom();		
+	}
+	else {
+		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
+	}
+}
+
+
+function jupiterGo()
+{
+	var theIndex=numberOfPlanets.indexOf(' Jupiter');
+	if (theIndex===-1) {
+		nextPage(2,7);
+          	jupiterDoom();	 		
+	}
+	else {
+		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
+	}
+}
+
+
+function saturnGo()
+{
+	var theIndex=numberOfPlanets.indexOf(' Saturn');
+	if (theIndex===-1) {
+		nextPage(2,8);
+           	saturnDoom();		
+	}
+	else {
+		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
+	}
+}
+
+
+function uranusGo()
+{
+	var theIndex=numberOfPlanets.indexOf(' Uranus');
+	if (theIndex===-1) {
+		 nextPage(2,9);
+   		 uranusDoom();		
+	}
+	else {
+		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
+	}
+}
+
+
+function neptuneGo()
+{
+	var theIndex=numberOfPlanets.indexOf(' Neptune');
+	if (theIndex===-1) {
+		nextPage(2,10)
+          	neptuneDoom();
 	}
 	else {
 		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
