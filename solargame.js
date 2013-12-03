@@ -135,6 +135,9 @@ function goToSun()
 function giveLength(divName)
 {
 	theLength=numberOfPlanets.length;
+	
+	document.getElementById(divName).style.display = 'block';
+	
 	document.getElementById(divName).innerHTML=theLength;
 }
 
