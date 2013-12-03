@@ -237,7 +237,7 @@ function saveSolarSystem()
 {
 	nextPage(11,12);
 	document.getElementById('goodChoiceDiv').style.display = 'block';
-	document.getElementById('goodChoiceDiv').innerHTML = 'Having successfully collected all the pieces of the device ' + playerInfo.teamname + ' has saved the solar system! The Earth is saved and ' + playerInfo.teamname + ' and their ship the ' + playerInfo.spaceship + ' made history as the saviors of the solar system. Game Over!';
+	document.getElementById('goodChoiceDiv').innerHTML = 'Having successfully collected all the pieces of the devicew ' + playerInfo.teamname + ' has saved the solar system! The sun is saved and ' + playerInfo.teamname + ', and their ship the ' + playerInfo.spaceship + ', have made history as the saviors of the solar system. Game Over!';
 
 
 }
@@ -247,7 +247,7 @@ function leaveSolarSystem()
 {
 	nextPage(11,13);
 	document.getElementById('badChoiceDiv').style.display = 'block';
-	document.getElementById('badChoiceDiv').innerHTML = 'Leaving behind their previous civilization ' + playerInfo.teamname + ' with their ship the ' + playerInfo.spaceship + ' start a new civilization as they have imagined it, using what they thought worked best on Earth, their previous home.  Game Over!';
+	document.getElementById('badChoiceDiv').innerHTML = 'Leaving behind their previous civilization, ' + playerInfo.teamname + ', with their ship the ' + playerInfo.spaceship + ', start a new civilization as they have imagined it, using what they thought worked best on Earth, their previous home. Game Over!';
 
 }
 
@@ -313,10 +313,10 @@ function venusDoom()
 	giveLength('venusN', 'venusL');
 
 	var venusQuestions=new Array();
-	venusQuestions[0]="Venus is the second brightest object in the night sky after what other object? Enter an all-lowercase word";
+	venusQuestions[0]="Venus is the second brightest object in the night sky after what other object? Enter an all-lowercase word.";
 	venusQuestions[1]="How many Earth days does it take for Venus to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.";
 	venusQuestions[2]="How many moons does Venus have? Enter a number (i.e. '4', not 'four').";
-	venusQuestions[3]="What was the first country to land a man-made spacecraft on Venus? Enter an all-lowercase word";
+	venusQuestions[3]="What was the first country to land a man-made spacecraft on Venus? Enter an all-lowercase word.";
   
 	var venusAnswers=["moon","225","0","soviet union"];
 	
@@ -355,7 +355,7 @@ function earthDoom()
 	
 	var earthQuestions=new Array();
 	earthQuestions[0]="The Earth's rotation is known to be changing. Is it slowing down or speeding up?";
-	earthQuestions[1]="Earth is the only planet, besides for Uranus, not named after a ____. Fill in the blank. Enter an all-lowercase word";
+	earthQuestions[1]="Earth is the only planet, besides for Uranus, not named after a ____. Fill in the blank. Enter an all-lowercase word.";
 	earthQuestions[2]="What is the equatorial diameter of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
 	earthQuestions[3]="What is the equatorial circumference of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
   
@@ -398,7 +398,7 @@ function marsDoom()
 	
 	var marsQuestions=new Array();
 	marsQuestions[0]="How many missions to Mars have been successful? Enter a number (i.e. '4', not 'four').";
-	marsQuestions[1]="Mars takes its name from the Roman god of what? Enter an all-lowercase word";
+	marsQuestions[1]="Mars takes its name from the Roman god of what? Enter an all-lowercase word.";
 	marsQuestions[2]="How many moons does Mars have? Enter a number (i.e. '4', not 'four').";
 	marsQuestions[3]="Mars has the largest ____ storms in the solar system. Fill in the blank. Enter an all-lowercase word";
   
@@ -439,9 +439,9 @@ function jupiterDoom()
 	giveLength('jupiterN', 'jupiterL');	
 	
 	var jupQuestions=new Array();
-	jupQuestions[0]="Jupiter, along with the other 4 outer planets, is a ____ giant. Fill in the blank. Enter an all-lowercase word";
+	jupQuestions[0]="Jupiter, along with the other 4 outer planets, is a ____ giant. Fill in the blank. Enter an all-lowercase word.";
 	jupQuestions[1]="How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').";
-	jupQuestions[2]="Which moon of Jupiter's is the largest moon in the solar system? Enter an all-lowercase word";
+	jupQuestions[2]="Which moon of Jupiter's is the largest moon in the solar system? Enter an all-lowercase word.";
 	jupQuestions[3]="What is the equatorial circumference of Jupiter, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
   
 	var jupAnswers=["gas","67","ganymede","439264"];
@@ -481,9 +481,9 @@ function saturnDoom()
 	giveLength('saturnN', 'saturnL');
 	
 	var satQuestions=new Array();
-	satQuestions[0]="Saturn is the second largest planet in the solar system. What is the largest planet in the solar system? Enter an all-lowercase word";
+	satQuestions[0]="Saturn is the second largest planet in the solar system. What is the largest planet in the solar system? Enter an all-lowercase word.";
 	satQuestions[1]="How many moons does Saturn have? Enter a number (i.e. '4', not 'four').";
-	satQuestions[2]="Who first observed Saturn's rings? Enter an all-lowercase word";
+	satQuestions[2]="Who first observed Saturn's rings? Enter an all-lowercase word.";
 	satQuestions[3]="How many rings does Saturn have? Enter a number (i.e. '4', not 'four').";
   
 	var satAnswers=["jupiter","62","galileo","7"];
@@ -523,10 +523,10 @@ function uranusDoom()
 	giveLength('uranusN', 'uranusL');	
 	
 	var uranusQuestions=new Array();
-	uranusQuestions[0]="Uranus was the first planet to be observed using a __________. Fill in the blank. Enter an all-lowercase word";
+	uranusQuestions[0]="Uranus was the first planet to be observed using a __________. Fill in the blank. Enter an all-lowercase word.";
 	uranusQuestions[1]="How many moons does Uranus have? Enter a number (i.e. '4', not 'four').";
 	uranusQuestions[2]="In what year was Uranus discovered?";
-	uranusQuestions[3]="All of Uranus' moons are named after characters from the works of William Shakespeare and Alexander ____. Fill in the blank. Enter an all-lowercase word";
+	uranusQuestions[3]="All of Uranus' moons are named after characters from the works of William Shakespeare and Alexander ____. Fill in the blank. Enter an all-lowercase word.";
   
 	var uranusAnswers=["telescope","27","1781","pope"];
 	
@@ -565,9 +565,9 @@ function neptuneDoom()
 	
 	var nepQuestions=new Array();
 	nepQuestions[0]="How many moons does Neptune have? Enter a number (i.e. '4', not 'four').";
-	nepQuestions[1]="What is the name of Neptune's major moon? Enter an all-lowercase word";
-	nepQuestions[2]="Although smaller in diameter to Uranus, Neptune has a greater _____. Fill in the blank. Enter an all-lowercase word";
-	nepQuestions[3]="Neptune has only been passed by one spacecraft, Voyager 2 which flew by on the 25th of August ____. Fill in the blank. Enter an all-lowercase word";
+	nepQuestions[1]="What is the name of Neptune's major moon? Enter an all-lowercase word.";
+	nepQuestions[2]="Although smaller in diameter to Uranus, Neptune has a greater _____. Fill in the blank. Enter an all-lowercase word.";
+	nepQuestions[3]="Neptune has only been passed by one spacecraft, Voyager 2 which flew by on the 25th of August ____. Fill in the blank. Enter an all-lowercase word.";
   
 	var nepAnswers=["14","tritan","mass","1989"];
 	
