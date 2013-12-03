@@ -106,18 +106,18 @@ document.getElementById('page0').style.display = 'block';
 }
 
 
-function addPlanet()
+function addPlanet(planName)
 {
 	var planetNumber=numberOfPlanets.length;
 	nextPlanet=(planetNumber + 1);
-	numberOfPlanets[nextPlanet]="1";
+	numberOfPlanets[nextPlanet]=planName;
 }
 
 
 function checkPlanetNumber()
 {
 	
-	if (numberOfPlanets.length>=8) {
+	if (numberOfPlanets.length===8) {
 		goToSun();
 	}
 	else {
@@ -169,7 +169,7 @@ function mercuryCheckAnswer()
 	
 		if (userAns===mercRandomQAns) { 
 			 correct();
-			addPlanet();
+			addPlanet('mercury');
 			nextPage(3,2);
 		}
 		else if (userAns==='') {
@@ -211,7 +211,7 @@ function venusCheckAnswer()
 	
 		if (userAns===venusRandomQAns) { 
 			 correct();
-			addPlanet();
+			addPlanet('venus');
 			nextPage(4,2);
 		}
 		else if (userAns==='') {
@@ -253,7 +253,7 @@ function earthCheckAnswer()
 	
 		if (userAns===earthRandomQAns) { 
 			 correct();
-			addPlanet();
+			addPlanet('earth');
 			nextPage(5,2);
 		}
 		else if (userAns==='') {
@@ -295,7 +295,7 @@ function marsCheckAnswer()
 	
 		if (userAns===marsRandomQAns) { 
 			 correct();
-			addPlanet();
+			addPlanet('mars');
 			nextPage(6,2);
 		}
 		else if (userAns==='') {
@@ -337,7 +337,7 @@ function jupiterCheckAnswer()
 	
 		if (userAns===jupRandomQAns) { 
 			 correct();
-			addPlanet();
+			addPlanet('jupiter');
 			nextPage(7,2);
 		}
 		else if (userAns==='') {
@@ -379,7 +379,7 @@ function saturnCheckAnswer()
 	
 		if (userAns===satRandomQAns) { 
 			 correct();
-			addPlanet();
+			addPlanet('saturn');
 			nextPage(8,2);
 		}
 		else if (userAns==='') {
@@ -420,7 +420,7 @@ function uranusCheckAnswer()
 	
 		if (userAns===uranusRandomQAns) { 
 			 correct();
-			addPlanet();
+			addPlanet('uranus');
 			nextPage(9,2);
 		}
 		else if (userAns==='') {
@@ -462,7 +462,7 @@ function neptuneCheckAnswer()
 	
 		if (userAns===nepRandomQAns) { 
 			 correct();
-			addPlanet();
+			addPlanet('neptune');
 			nextPage(10,2);
 		}
 		else if (userAns==='') {
