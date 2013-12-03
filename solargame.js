@@ -117,7 +117,7 @@ function addPlanet(planName)
 function checkPlanetNumber()
 {
 	
-	if (planetNumber===8) {
+	if (planetNumber===7) {
 		goToSun();
 	}
 	else {
