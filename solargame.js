@@ -145,19 +145,23 @@ function leaveSolarSystem()
 }
 
 
-function giveLength(divName)
+function giveLength(divNames, divLength)
 {
 	theLength=numberOfPlanets.length;
 	
-	document.getElementById(divName).style.display = 'block';
+	document.getElementById(divNames).style.display = 'block';
 	
-	document.getElementById(divName).innerHTML=numberOfPlanets;
+	document.getElementById(divLength).style.display = 'block';
+	
+	document.getElementById(divNames).innerHTML=numberOfPlanets;
+	
+	document.getElementById(divLength).innerHTML=theLength;
 }
 
 
 function mercuryDoom()
 {
-	giveLength('mercuryL');
+	giveLength('mercuryN', 'mercuryL');
 	
 	mercQuestions=new Array();
 	mercQuestions[0]="How many moons does Mercury have? Enter a number (i.e. '4' not 'four').";
@@ -185,7 +189,7 @@ function mercuryCheckAnswer()
 	
 		if (userAns===mercRandomQAns) { 
 			 correct();
-			addPlanet('mercury');
+			addPlanet(' Mercury');
 			nextPage(3,2);
 		}
 		else if (userAns==='') {
@@ -199,7 +203,7 @@ function mercuryCheckAnswer()
 
 function venusDoom()
 {
-	giveLength('venusL');
+	giveLength('venusN', 'venusL');
 
 	var venusQuestions=new Array();
 	venusQuestions[0]="Venus is the second brightest object in the night sky after what other object? Enter an all-lowercase word";
@@ -227,7 +231,7 @@ function venusCheckAnswer()
 	
 		if (userAns===venusRandomQAns) { 
 			 correct();
-			addPlanet('venus');
+			addPlanet(' Venus');
 			nextPage(4,2);
 		}
 		else if (userAns==='') {
@@ -240,7 +244,7 @@ function venusCheckAnswer()
 
 function earthDoom()
 {	
-	giveLength('earthL');
+	giveLength('earthN', 'earthL');
 	
 	var earthQuestions=new Array();
 	earthQuestions[0]="The Earth's rotation is known to be changing. Is it slowing down or speeding up?";
@@ -269,7 +273,7 @@ function earthCheckAnswer()
 	
 		if (userAns===earthRandomQAns) { 
 			 correct();
-			addPlanet('earth');
+			addPlanet(' Earth');
 			nextPage(5,2);
 		}
 		else if (userAns==='') {
@@ -283,7 +287,7 @@ function earthCheckAnswer()
 
 function marsDoom()
 {	
-	giveLength('marsL');
+	giveLength('marsN', 'marsL');
 	
 	var marsQuestions=new Array();
 	marsQuestions[0]="How many missions to Mars have been successful? Enter a number (i.e. '4', not 'four').";
@@ -311,7 +315,7 @@ function marsCheckAnswer()
 	
 		if (userAns===marsRandomQAns) { 
 			 correct();
-			addPlanet('mars');
+			addPlanet(' Mars');
 			nextPage(6,2);
 		}
 		else if (userAns==='') {
@@ -325,7 +329,7 @@ function marsCheckAnswer()
 
 function jupiterDoom()
 {	
-	giveLength('jupiterL');	
+	giveLength('jupiterN', 'jupiterL');	
 	
 	var jupQuestions=new Array();
 	jupQuestions[0]="Jupiter, along with the other 4 outer planets, is a ____ giant. Fill in the blank. Enter an all-lowercase word";
@@ -353,7 +357,7 @@ function jupiterCheckAnswer()
 	
 		if (userAns===jupRandomQAns) { 
 			 correct();
-			addPlanet('jupiter');
+			addPlanet(' Jupiter');
 			nextPage(7,2);
 		}
 		else if (userAns==='') {
@@ -367,7 +371,7 @@ function jupiterCheckAnswer()
 
 function saturnDoom()
 {	
-	giveLength('saturnL');
+	giveLength('saturnN', 'saturnL');
 	
 	var satQuestions=new Array();
 	satQuestions[0]="Saturn is the second largest planet in the solar system. What is the largest planet in the solar system? Enter an all-lowercase word";
@@ -395,7 +399,7 @@ function saturnCheckAnswer()
 	
 		if (userAns===satRandomQAns) { 
 			 correct();
-			addPlanet('saturn');
+			addPlanet(' Saturn');
 			nextPage(8,2);
 		}
 		else if (userAns==='') {
@@ -409,7 +413,7 @@ function saturnCheckAnswer()
 
 function uranusDoom()
 {
-	giveLength('uranusL');	
+	giveLength('uranusN', 'uranusL');	
 	
 	var uranusQuestions=new Array();
 	uranusQuestions[0]="Uranus was the first planet to be observed using a __________. Fill in the blank. Enter an all-lowercase word";
@@ -436,7 +440,7 @@ function uranusCheckAnswer()
 	
 		if (userAns===uranusRandomQAns) { 
 			 correct();
-			addPlanet('uranus');
+			addPlanet(' Uranus');
 			nextPage(9,2);
 		}
 		else if (userAns==='') {
@@ -450,7 +454,7 @@ function uranusCheckAnswer()
 
 function neptuneDoom()
 {	
-	giveLength('neptuneL');	
+	giveLength('neptuneN', 'neptuneL');	
 	
 	var nepQuestions=new Array();
 	nepQuestions[0]="How many moons does Neptune have? Enter a number (i.e. '4', not 'four').";
@@ -478,7 +482,7 @@ function neptuneCheckAnswer()
 	
 		if (userAns===nepRandomQAns) { 
 			 correct();
-			addPlanet('neptune');
+			addPlanet(' Neptune');
 			nextPage(10,2);
 		}
 		else if (userAns==='') {
