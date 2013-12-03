@@ -33,6 +33,7 @@ function travelToPlanet()
         						 	}
 									else if (planet.toLowerCase()==='sun') {             
 	   							   		checkPlanetNumber();
+										changeSunDiv();
 								  	  }
 										else {             
 	   										displayPlanet('You cannot travel there!');           
@@ -153,7 +154,13 @@ function changeStoryDiv()
 	document.getElementById('storyDiv').innerHTML = 'The year is 3013 and the world is in grave danger. ' + playerInfo.teamname + ', the world as we know it and the entire solar system will be destroyed unless you collect all the pieces of a device that will keep the sun shining. Otherwise the sun will die out and the solar system, along with all its inhabitance, will cease to exist. As ' + playerInfo.teamname + ', you must to go to each planet in the solar system in your spaceship, ' + playerInfo.spaceship + ', and  answer a question about that planet in order to get each piece of the device, and upgrade the ' + playerInfo.spaceship + ', so you can prepare for the final voyage to the sun. Though if your team goes to the sun too early, ' + playerInfo.spaceship + ' will be disintegrated and you fail your mission. Otherwise, ' + playerInfo.teamname + ' is allowed to freely go to each planet in any order, and can retry the questions about each planet. Because of an unexpected chemical imbalance in the fusion reaction that the sun undergoes, it is up to ' + playerInfo.teamname + ' to save the solar system!';
 }
 
- 
+function changeSunDiv()
+{
+	document.getElementById('sunDiv').style.display = 'block';
+	document.getElementById('sunDiv').innerHTML = 'Now ' + playerInfo.teamname + ' has a choice. Save the solar system as intended, or start civilization over again on another near by solar system that can also sustain life, using the device as an energy source to power the ' + playerInfo.spaceship + ' and get to the new solar system. What will you do?';
+
+}
+
 function proceedFromPage0()
 {
 	numberOfPlanets=new Array(); 
@@ -229,12 +236,19 @@ function goToSun()
 function saveSolarSystem()
 {
 	nextPage(11,12);
+	document.getElementById('goodChoiceDiv').style.display = 'block';
+	document.getElementById('goodChoiceDiv').innerHTML = 'Having successfully collected all the pieces of the device ' + playerInfo.teamname + ' has saved the solar system! The Earth is saved and ' + playerInfo.teamname + ' and their ship the ' + playerInfo.spaceship + ' made history as the saviors of the solar system. Game Over!';
+
+
 }
 
 
 function leaveSolarSystem()
 {
 	nextPage(11,13);
+	document.getElementById('badChoiceDiv').style.display = 'block';
+	document.getElementById('badChoiceDiv').innerHTML = 'Leaving behind their previous civilization ' + playerInfo.teamname + ' with their ship the ' + playerInfo.spaceship + ' start a new civilization as they have imagined it, using what they thought worked best on Earth, their previous home.  Game Over!';
+
 }
 
 
