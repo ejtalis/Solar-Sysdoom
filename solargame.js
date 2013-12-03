@@ -132,6 +132,19 @@ function goToSun()
 	nextPage(2,11);
 }
 
+
+function saveSolarSystem()
+{
+	nextPage(11,12);
+}
+
+
+function leaveSolarSystem()
+{
+	nextPage(11,13);
+}
+
+
 function giveLength(divName)
 {
 	theLength=numberOfPlanets.length;
