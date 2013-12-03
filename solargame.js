@@ -146,7 +146,7 @@ function neptuneGo()
 function changeStoryDiv()
 {
 	document.getElementById('storyDiv').style.display = 'block';
-	var playerInfo; 
+	playerInfo; 
 	playerInfo= {
 		teamname: document.getElementById('teamNameInput').value,
 		spaceship: document.getElementById('shipNameInput').value
@@ -241,7 +241,7 @@ function leaveSolarSystem()
 
 function giveLength(divNames, divLength)
 {
-	theLength=numberOfPlanets.length;
+	var theLength=numberOfPlanets.length;
 	
 	document.getElementById(divNames).style.display = 'block';
 	
