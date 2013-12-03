@@ -147,6 +147,7 @@ function neptuneGo()
 function changeStoryDiv()
 {
 	document.getElementById('storyDiv').style.display = 'block';
+	document.getElementById('pictureDiv').style.display = 'block';
 	playerInfo= {
 		teamname: document.getElementById('teamNameInput').value,
 		spaceship: document.getElementById('shipNameInput').value
