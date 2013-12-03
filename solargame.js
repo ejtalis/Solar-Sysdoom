@@ -50,11 +50,11 @@ function mercuryGo()
 {
 	theIndex=numberOfPlanets.indexOf(' Mercury');
 	if (theIndex===-1) {
-		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
+		nextPage(2, 3); 
+  		mercuryDoom();   	
 	}
 	else {
-	nextPage(2, 3); 
-  	mercuryDoom();   
+		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
 	}
 }
 
