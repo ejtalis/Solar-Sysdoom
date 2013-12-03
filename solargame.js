@@ -110,7 +110,7 @@ function addPlanet(planName)
 {
 	planetNumber=numberOfPlanets.length;
 	nextPlanet=(planetNumber + 1);
-	numberOfPlanets[nextPlanet]=planName;
+	numberOfPlanets[planetNumber]=planName;
 }
 
 
