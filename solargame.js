@@ -510,15 +510,15 @@ function neptuneDoom()
 	document.getElementById('outputNeptune').innerHTML=nepRandomQues;
 }
 
-function neptuneCheckAnswer()
+function neptuneCheckAnswer(div, randomQA, element, pageNum)
 {
    	var userAns
-   	userAns=document.getElementById('answerInputNeptune').value;
+   	userAns=document.getElementById(div).value;
 	
-		if (userAns===nepRandomQAns) { 
+		if (userAns===randomQA) { 
 			 correct();
-			addPlanet(' Neptune');
-			nextPage(10,2);
+			addPlanet(element);
+			nextPage(pageNum,2);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
