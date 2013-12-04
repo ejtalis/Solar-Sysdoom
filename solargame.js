@@ -3,7 +3,7 @@ function travelToPlanet()
 	planet=document.getElementById('actionInput').value;
 	
 	if (planet.toLowerCase()==='mercury') {
- 	 	mercuryGo();   
+ 		 planetGo(' Mercury', MercuryDoom, 3)
  	 }   
 
 		else if (planet.toLowerCase()==='venus') {
@@ -51,6 +51,19 @@ function mercuryGo()
 		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
 	}
 }
+
+function planetGo(element, doomFunction, pageNum)
+{
+	var theIndex=numberOfPlanets.indexOf(element);
+	if (theIndex===-1) {
+		nextPage(2, pageNum);
+		doomFunction();
+	}
+	else {
+		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
+	}
+}
+
 
 
 function venusGo()
