@@ -3,7 +3,7 @@ function travelToPlanet()
 	planet=document.getElementById('actionInput').value;
 	
 	if (planet.toLowerCase()==='mercury') {
- 		 planetGo(' Mercury', 'MercuryDoom', '3')
+ 		 planetGo(' Mercury', 'mercuryDoom', '3')
  	 }   
 
 		else if (planet.toLowerCase()==='venus') {
