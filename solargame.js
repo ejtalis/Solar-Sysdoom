@@ -510,21 +510,20 @@ function neptuneDoom()
 	document.getElementById('outputNeptune').innerHTML=nepRandomQues;
 }
 
-
-function checkAnswer(inputBox, randomQAns, element, pageNum)
+function neptuneCheckAnswer()
 {
-	var userAns
-   	userAns=document.getElementById(inputBox).value;
+   	var userAns
+   	userAns=document.getElementById('answerInputNeptune').value;
 	
-		if (userAns===randomQAns) { 
-			correct();
-			addPlanet(element);
-			nextPage(pageNum,2);
+		if (userAns===nepRandomQAns) { 
+			 correct();
+			addPlanet(' Neptune');
+			nextPage(10,2);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
 		}
 		else {
 			wrong();
-		}	
+		}
 }
