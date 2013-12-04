@@ -3,11 +3,11 @@ function travelToPlanet()
 	planet=document.getElementById('actionInput').value;
 	
 	if (planet.toLowerCase()==='mercury') {
- 		 planetGo(' Mercury', 'mercuryDoom', '3')
+ 		 planetGo(' Mercury', 'mercuryDoom', '3');
  	 }   
 
 		else if (planet.toLowerCase()==='venus') {
-           		venusGo();    
+           		planetGo(' Venus', 'venusDoom', '4');  
 		}
 	 
 	 		else if (planet.toLowerCase()==='earth') {         
@@ -40,17 +40,6 @@ function travelToPlanet()
 								  		 }
 }
         
-function mercuryGo()
-{
-	var theIndex=numberOfPlanets.indexOf(' Mercury');
-	if (theIndex===-1) {
-		nextPage(2, 3); 
-  		mercuryDoom();   	
-	}
-	else {
-		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
-	}
-}
 
 function planetGo(element, doomFunction, pageNum)
 {
@@ -58,20 +47,6 @@ function planetGo(element, doomFunction, pageNum)
 	if (theIndex===-1) {
 		nextPage(2, pageNum);
 		window[doomFunction]();
-	}
-	else {
-		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
-	}
-}
-
-
-
-function venusGo()
-{
-	var theIndex=numberOfPlanets.indexOf(' Venus');
-	if (theIndex===-1) {
-		nextPage(2,4);
-		venusDoom();  		
 	}
 	else {
 		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
