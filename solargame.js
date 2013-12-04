@@ -56,6 +56,19 @@ function planetGo(element, doomFunction, picture, pageNum)
 }
 
 
+function toHelpPage(pageNum)
+{
+	pageNum=backToPage;
+	nextPage(pageNum,14);
+}
+
+
+function fromHelpPage()
+{
+	nextPage(14,backToPage);
+}
+
+
 function showDiv(divName)
 {
 	document.getElementById(divName).style.display = 'block';
