@@ -11,25 +11,25 @@ function travelToPlanet()
 		}
 	 
 	 		else if (planet.toLowerCase()==='earth') {         
-   	   			earthGo();
+   	   			planetGo(' Earth', 'earthDoom', '5');
  			}
 
   			 	else if (planet.toLowerCase()==='mars') {
-					marsGo();
+					planetGo(' Mars', 'marsDoom', '6');
 			 	}
 
 				 	else if (planet.toLowerCase()==='jupiter') {  
-          					 jupiterGo();
+          					 planetGo(' Jupiter', 'jupiterDoom', '7');
   				 	}
 	 					else if (planet.toLowerCase()==='saturn') {
-           						saturnGo();
+           						planetGo(' Saturn', 'saturnDoom', '8');
 						}
 							 else if (planet.toLowerCase()==='uranus') {   
-   								uranusGo();
+   								planetGo(' Uranus', 'uranusDoom', '9');
  						 	 } 
 
 							 	else if (planet.toLowerCase()==='neptune') {  
-          								 neptuneGo();
+          								 planetGo(' Neptune', 'neptuneDoom', '10');
         						 	}
 									else if (planet.toLowerCase()==='sun') {             
 	   							   		checkPlanetNumber();
@@ -43,88 +43,11 @@ function travelToPlanet()
 
 function planetGo(element, doomFunction, pageNum)
 {
-	var theIndex=numberOfPlanets.indexOf(element);
+	var theIndex
+	theIndex=numberOfPlanets.indexOf(element);
 	if (theIndex===-1) {
 		nextPage(2, pageNum);
 		window[doomFunction]();
-	}
-	else {
-		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
-	}
-}
-
-
-function earthGo()
-{
-	var theIndex=numberOfPlanets.indexOf(' Earth');
-	if (theIndex===-1) {
-		nextPage(2,5);
-   	   	earthDoom();  		
-	}
-	else {
-		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
-	}
-}
-
-
-function marsGo()
-{
-	var theIndex=numberOfPlanets.indexOf(' Mars');
-	if (theIndex===-1) {
-		nextPage(2,6);
-		marsDoom();		
-	}
-	else {
-		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
-	}
-}
-
-
-function jupiterGo()
-{
-	var theIndex=numberOfPlanets.indexOf(' Jupiter');
-	if (theIndex===-1) {
-		nextPage(2,7);
-          	jupiterDoom();	 		
-	}
-	else {
-		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
-	}
-}
-
-
-function saturnGo()
-{
-	var theIndex=numberOfPlanets.indexOf(' Saturn');
-	if (theIndex===-1) {
-		nextPage(2,8);
-           	saturnDoom();		
-	}
-	else {
-		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
-	}
-}
-
-
-function uranusGo()
-{
-	var theIndex=numberOfPlanets.indexOf(' Uranus');
-	if (theIndex===-1) {
-		 nextPage(2,9);
-   		 uranusDoom();		
-	}
-	else {
-		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
-	}
-}
-
-
-function neptuneGo()
-{
-	var theIndex=numberOfPlanets.indexOf(' Neptune');
-	if (theIndex===-1) {
-		nextPage(2,10)
-          	neptuneDoom();
 	}
 	else {
 		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
@@ -143,12 +66,13 @@ function changeStoryDiv()
 	document.getElementById('storyDiv').innerHTML = 'The year is 3013 and the world is in grave danger. ' + playerInfo.teamname + ', the world as we know it and the entire solar system will be destroyed unless you collect all the pieces of a device that will keep the sun shining. Otherwise the sun will die out and the solar system, along with all its inhabitance, will cease to exist. As ' + playerInfo.teamname + ', you must to go to each planet in the solar system in your spaceship, ' + playerInfo.spaceship + ', and  answer a question about that planet in order to get each piece of the device, and upgrade the ' + playerInfo.spaceship + ', so you can prepare for the final voyage to the sun. Though if your team goes to the sun too early, ' + playerInfo.spaceship + ' will be disintegrated and you fail your mission. Otherwise, ' + playerInfo.teamname + ' is allowed to freely go to each planet in any order, and can retry the questions about each planet. Because of an unexpected chemical imbalance in the fusion reaction that the sun undergoes, it is up to ' + playerInfo.teamname + ' to save the solar system!';
 }
 
+
 function changeSunDiv()
 {
 	document.getElementById('sunDiv').style.display = 'block';
 	document.getElementById('sunDiv').innerHTML = 'Now ' + playerInfo.teamname + ' has a choice. Save the solar system as intended, or start civilization over again on another near by solar system that can also sustain life, using the device as an energy source to power the ' + playerInfo.spaceship + ' and get to the new solar system. What will you do?';
-
 }
+
 
 function proceedFromPage0()
 {
@@ -191,12 +115,13 @@ function nextPage(curr,next)
 
 function startScreen()
 {
-document.getElementById('page0').style.display = 'block';
+	document.getElementById('page0').style.display = 'block';
 }
 
 
 function addPlanet(planName)
 {
+	var nextPlanet
 	planetNumber=numberOfPlanets.length;
 	nextPlanet=(planetNumber + 1);
 	numberOfPlanets[planetNumber]=planName;
@@ -205,20 +130,12 @@ function addPlanet(planName)
 
 function checkPlanetNumber()
 {
-	
 	if (planetNumber===7) {
-		goToSun();
+		nextPage(2,11);
 	}
 	else {
-
 		alert('You cannot travel to the sun yet, or you will be killed! Please visit each planet and collect all pieces of the device.');		
 	}
-}
-
-
-function goToSun()
-{
-	nextPage(2,11);
 }
 
 
@@ -227,8 +144,6 @@ function saveSolarSystem()
 	nextPage(11,12);
 	document.getElementById('goodChoiceDiv').style.display = 'block';
 	document.getElementById('goodChoiceDiv').innerHTML = 'Having successfully collected all the pieces of the devicew ' + playerInfo.teamname + ' has saved the solar system! The sun is saved and ' + playerInfo.teamname + ', and their ship the ' + playerInfo.spaceship + ', have made history as the saviors of the solar system. Game Over!';
-
-
 }
 
 
@@ -237,13 +152,14 @@ function leaveSolarSystem()
 	nextPage(11,13);
 	document.getElementById('badChoiceDiv').style.display = 'block';
 	document.getElementById('badChoiceDiv').innerHTML = 'Leaving behind their previous civilization, ' + playerInfo.teamname + ', with their ship the ' + playerInfo.spaceship + ', start a new civilization as they have imagined it, using what they thought worked best on Earth, their previous home. Game Over!';
-
 }
 
 
 function giveLength(divNames, divLength)
 {
-	var theLength=numberOfPlanets.length;
+	var theLength
+	
+	theLength=numberOfPlanets.length;
 	
 	document.getElementById(divNames).style.display = 'block';
 	
@@ -257,6 +173,8 @@ function giveLength(divNames, divLength)
 
 function mercuryDoom()
 {
+	var mercQuestions, mercAnswers, mercPos, mercRandomQues
+	
 	giveLength('mercuryN', 'mercuryL');
 	
 	mercQuestions=new Array();
@@ -265,11 +183,11 @@ function mercuryDoom()
 	mercQuestions[2]="What is the polar diameter of Mercury, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
 	mercQuestions[3]="Mercury be observed, from Earth, passing across the face of the Sun. This event is called a transit. How many times per century does this transit of Mercury occur? Enter a number (i.e. '4', not 'four').";
   
-	var mercAnswers=["0","88","4879","17"];
+	mercAnswers=["0","88","4879","17"];
 	
-	var mercPos=RandomInt(0,3);
+	mercPos=RandomInt(0,3);
 	
-	var mercRandomQues=mercQuestions[mercPos];
+	mercRandomQues=mercQuestions[mercPos];
 	
 	mercRandomQAns=mercAnswers[mercPos];
 	
@@ -281,7 +199,8 @@ function mercuryDoom()
 
 function mercuryCheckAnswer()
 {
-   	var userAns=document.getElementById('answerInputMercury').value;
+   	var userAns
+   	userAns=document.getElementById('answerInputMercury').value;
 	
 		if (userAns===mercRandomQAns) { 
 			 correct();
@@ -299,19 +218,21 @@ function mercuryCheckAnswer()
 
 function venusDoom()
 {
+	var venusQuestions, venusAnswers, venusPos, venusRandomQues
+	
 	giveLength('venusN', 'venusL');
 
-	var venusQuestions=new Array();
+	venusQuestions=new Array();
 	venusQuestions[0]="Venus is the second brightest object in the night sky after what other object? Enter an all-lowercase word.";
 	venusQuestions[1]="How many Earth days does it take for Venus to rotate once around its axis? Enter a number (i.e. '4', not 'four') and round your answer to the nearest whole number.";
 	venusQuestions[2]="How many moons does Venus have? Enter a number (i.e. '4', not 'four').";
 	venusQuestions[3]="What was the first country to land a man-made spacecraft on Venus? Enter an all-lowercase word.";
   
-	var venusAnswers=["moon","225","0","soviet union"];
+	venusAnswers=["moon","225","0","soviet union"];
 	
-	var venusPos=RandomInt(0,3);
+	venusPos=RandomInt(0,3);
 	
-	var venusRandomQues=venusQuestions[venusPos];
+	venusRandomQues=venusQuestions[venusPos];
 	
 	venusRandomQAns=venusAnswers[venusPos];
 	
@@ -323,7 +244,8 @@ function venusDoom()
 
 function venusCheckAnswer()
 {
-   	var userAns=document.getElementById('answerInputVenus').value;
+   	var userAns
+   	userAns=document.getElementById('answerInputVenus').value;
 	
 		if (userAns===venusRandomQAns) { 
 			 correct();
@@ -340,19 +262,21 @@ function venusCheckAnswer()
 
 function earthDoom()
 {	
+	var earthQuestions, earthAnswers, earthPos, earthRandomQues
+	
 	giveLength('earthN', 'earthL');
 	
-	var earthQuestions=new Array();
+	earthQuestions=new Array();
 	earthQuestions[0]="The Earth's rotation is known to be changing. Is it slowing down or speeding up?";
 	earthQuestions[1]="Earth is the only planet, besides for Uranus, not named after a ____. Fill in the blank. Enter an all-lowercase word.";
 	earthQuestions[2]="What is the equatorial diameter of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
 	earthQuestions[3]="What is the equatorial circumference of Earth, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
   
-	var earthAnswers=["slowing down","god","12756","40030"];
+	earthAnswers=["slowing down","god","12756","40030"];
 	
-	var earthPos=RandomInt(0,3);
+	earthPos=RandomInt(0,3);
 	
-	var earthRandomQues=earthQuestions[earthPos];
+	earthRandomQues=earthQuestions[earthPos];
 	
 	earthRandomQAns=earthAnswers[earthPos];
 	
@@ -365,7 +289,8 @@ function earthDoom()
 		
 function earthCheckAnswer()
 {
-   	var userAns=document.getElementById('answerInputEarth').value;
+   	var userAns
+   	userAns=document.getElementById('answerInputEarth').value;
 	
 		if (userAns===earthRandomQAns) { 
 			 correct();
@@ -383,19 +308,21 @@ function earthCheckAnswer()
 
 function marsDoom()
 {	
+	var marsQuestions, marsAnswers, marsPos, marsRandomQues
+	
 	giveLength('marsN', 'marsL');
 	
-	var marsQuestions=new Array();
+	marsQuestions=new Array();
 	marsQuestions[0]="How many missions to Mars have been successful? Enter a number (i.e. '4', not 'four').";
 	marsQuestions[1]="Mars takes its name from the Roman god of what? Enter an all-lowercase word.";
 	marsQuestions[2]="How many moons does Mars have? Enter a number (i.e. '4', not 'four').";
 	marsQuestions[3]="Mars has the largest ____ storms in the solar system. Fill in the blank. Enter an all-lowercase word";
   
-	var marsAnswers=["16","war","2","dust"];
+	marsAnswers=["16","war","2","dust"];
 	
-	var marsPos=RandomInt(0,3);
+	marsPos=RandomInt(0,3);
 	
-	var marsRandomQues=marsQuestions[marsPos];
+	marsRandomQues=marsQuestions[marsPos];
 	
 	marsRandomQAns=marsAnswers[marsPos];
 	
@@ -407,7 +334,8 @@ function marsDoom()
 
 function marsCheckAnswer()
 {
-   	var userAns=document.getElementById('answerInputMars').value;
+   	var userAns
+   	userAns=document.getElementById('answerInputMars').value;
 	
 		if (userAns===marsRandomQAns) { 
 			 correct();
@@ -425,19 +353,21 @@ function marsCheckAnswer()
 
 function jupiterDoom()
 {	
+	var jupQuestions, jupAnswers, jupPos, jupRandomQues
+	
 	giveLength('jupiterN', 'jupiterL');	
 	
-	var jupQuestions=new Array();
+	jupQuestions=new Array();
 	jupQuestions[0]="Jupiter, along with the other 4 outer planets, is a ____ giant. Fill in the blank. Enter an all-lowercase word.";
 	jupQuestions[1]="How many moons does Jupiter have? Enter a number (i.e. '4', not 'four').";
 	jupQuestions[2]="Which moon of Jupiter's is the largest moon in the solar system? Enter an all-lowercase word.";
 	jupQuestions[3]="What is the equatorial circumference of Jupiter, in km? Enter a number (i.e. '4', not 'four') and do not include commas (i.e. '3997', not '3,997').";
   
-	var jupAnswers=["gas","67","ganymede","439264"];
+	jupAnswers=["gas","67","ganymede","439264"];
 	
-	var jupPos=RandomInt(0,3);
+	jupPos=RandomInt(0,3);
 	
-	var jupRandomQues=jupQuestions[jupPos];
+	jupRandomQues=jupQuestions[jupPos];
 	
 	jupRandomQAns=jupAnswers[jupPos];
 	
@@ -449,7 +379,8 @@ function jupiterDoom()
 
 function jupiterCheckAnswer()
 {
-   	var userAns=document.getElementById('answerInputJupiter').value;
+   	var userAns
+   	userAns=document.getElementById('answerInputJupiter').value;
 	
 		if (userAns===jupRandomQAns) { 
 			 correct();
@@ -467,19 +398,21 @@ function jupiterCheckAnswer()
 
 function saturnDoom()
 {	
+	var satQuestions, satAnswers, satPos, satRandomQues
+	
 	giveLength('saturnN', 'saturnL');
 	
-	var satQuestions=new Array();
+	satQuestions=new Array();
 	satQuestions[0]="Saturn is the second largest planet in the solar system. What is the largest planet in the solar system? Enter an all-lowercase word.";
 	satQuestions[1]="How many moons does Saturn have? Enter a number (i.e. '4', not 'four').";
 	satQuestions[2]="Who first observed Saturn's rings? Enter an all-lowercase word.";
 	satQuestions[3]="How many rings does Saturn have? Enter a number (i.e. '4', not 'four').";
   
-	var satAnswers=["jupiter","62","galileo","7"];
+	satAnswers=["jupiter","62","galileo","7"];
 	
-	var satPos=RandomInt(0,3);
+	satPos=RandomInt(0,3);
 	
-	var satRandomQues=satQuestions[satPos];
+	satRandomQues=satQuestions[satPos];
 	
 	satRandomQAns=satAnswers[satPos];
 	
@@ -491,7 +424,8 @@ function saturnDoom()
 
 function saturnCheckAnswer()
 {
-   	var userAns=document.getElementById('answerInputSaturn').value;
+   	var userAns
+   	userAns=document.getElementById('answerInputSaturn').value;
 	
 		if (userAns===satRandomQAns) { 
 			 correct();
@@ -509,19 +443,21 @@ function saturnCheckAnswer()
 
 function uranusDoom()
 {
+	var uranusQuestions, uranusAnswers, uranusPos, uranusRandomQues
+	
 	giveLength('uranusN', 'uranusL');	
 	
-	var uranusQuestions=new Array();
+	uranusQuestions=new Array();
 	uranusQuestions[0]="Uranus was the first planet to be observed using a __________. Fill in the blank. Enter an all-lowercase word.";
 	uranusQuestions[1]="How many moons does Uranus have? Enter a number (i.e. '4', not 'four').";
 	uranusQuestions[2]="In what year was Uranus discovered?";
 	uranusQuestions[3]="All of Uranus' moons are named after characters from the works of William Shakespeare and Alexander ____. Fill in the blank. Enter an all-lowercase word.";
   
-	var uranusAnswers=["telescope","27","1781","pope"];
+	uranusAnswers=["telescope","27","1781","pope"];
 	
-	var uranusPos=RandomInt(0,3);
+	uranusPos=RandomInt(0,3);
 	
-	var uranusRandomQues=uranusQuestions[uranusPos];
+	uranusRandomQues=uranusQuestions[uranusPos];
 	
 	uranusRandomQAns=uranusAnswers[uranusPos];
 	
@@ -532,7 +468,8 @@ function uranusDoom()
 
 function uranusCheckAnswer()
 {
-   	var userAns=document.getElementById('answerInputUranus').value;
+   	var userAns
+   	userAns=document.getElementById('answerInputUranus').value;
 	
 		if (userAns===uranusRandomQAns) { 
 			 correct();
@@ -550,19 +487,21 @@ function uranusCheckAnswer()
 
 function neptuneDoom()
 {	
+	var nepQuestions, nepAnswers, nepPos, nepRandomQues
+	
 	giveLength('neptuneN', 'neptuneL');	
 	
-	var nepQuestions=new Array();
+	nepQuestions=new Array();
 	nepQuestions[0]="How many moons does Neptune have? Enter a number (i.e. '4', not 'four').";
 	nepQuestions[1]="What is the name of Neptune's major moon? Enter an all-lowercase word.";
 	nepQuestions[2]="Although smaller in diameter to Uranus, Neptune has a greater _____. Fill in the blank. Enter an all-lowercase word.";
 	nepQuestions[3]="Neptune has only been passed by one spacecraft, Voyager 2 which flew by on the 25th of August ____. Fill in the blank. Enter an all-lowercase word.";
   
-	var nepAnswers=["14","tritan","mass","1989"];
+	nepAnswers=["14","tritan","mass","1989"];
 	
-	var nepPos=RandomInt(0,3);
+	nepPos=RandomInt(0,3);
 	
-	var nepRandomQues=nepQuestions[nepPos];
+	nepRandomQues=nepQuestions[nepPos];
 	
 	nepRandomQAns=nepAnswers[nepPos];
 	
@@ -574,7 +513,8 @@ function neptuneDoom()
 
 function neptuneCheckAnswer()
 {
-   	var userAns=document.getElementById('answerInputNeptune').value;
+   	var userAns
+   	userAns=document.getElementById('answerInputNeptune').value;
 	
 		if (userAns===nepRandomQAns) { 
 			 correct();
