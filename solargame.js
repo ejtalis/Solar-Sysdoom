@@ -34,7 +34,6 @@ function travelToPlanet()
         						 	}
 									else if (planet.toLowerCase()==='sun') {             
 	   							   		checkPlanetNumber();
-										changeSunDiv();
 								  	  }
 										else {             
 	   										displayPlanet('You cannot travel there!');           
@@ -134,6 +133,8 @@ function addPlanet(planName)
 function checkPlanetNumber()
 {
 	if (planetNumber===7) {
+		changeSunDiv();
+		showDiv('sunPicture')
 		nextPage(2,11);
 	}
 	else {
