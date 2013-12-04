@@ -59,7 +59,7 @@ function planetGo(element, doomFunction, picture, pageNum)
 function toHelpPage(pageNum)
 {
 	pageNum=backToPage;
-	nextPage(pageNum,14);
+	nextPage(backToPage,14);
 }
 
 
