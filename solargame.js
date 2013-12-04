@@ -4,33 +4,33 @@ function travelToPlanet()
 	planet=document.getElementById('actionInput').value;
 	
 	if (planet.toLowerCase()==='mercury') {
- 		 planetGo(' Mercury', 'mercuryDoom', '3');
+ 		 planetGo(' Mercury', 'mercuryDoom', 'mercuryPicture', '3');
  	 }   
 
 		else if (planet.toLowerCase()==='venus') {
-           		planetGo(' Venus', 'venusDoom', '4');  
+           		planetGo(' Venus', 'venusDoom', 'venusPicture', '4');  
 		}
 	 
 	 		else if (planet.toLowerCase()==='earth') {         
-   	   			planetGo(' Earth', 'earthDoom', '5');
+   	   			planetGo(' Earth', 'earthDoom', 'earthPicture', '5');
  			}
 
   			 	else if (planet.toLowerCase()==='mars') {
-					planetGo(' Mars', 'marsDoom', '6');
+					planetGo(' Mars', 'marsDoom', 'marsPicture', '6');
 			 	}
 
 				 	else if (planet.toLowerCase()==='jupiter') {  
-          					 planetGo(' Jupiter', 'jupiterDoom', '7');
+          					 planetGo(' Jupiter', 'jupiterDoom', 'jupiterPicture', '7');
   				 	}
 	 					else if (planet.toLowerCase()==='saturn') {
-           						planetGo(' Saturn', 'saturnDoom', '8');
+           						planetGo(' Saturn', 'saturnDoom', 'saturnPicture', '8');
 						}
 							 else if (planet.toLowerCase()==='uranus') {   
-   								planetGo(' Uranus', 'uranusDoom', '9');
+   								planetGo(' Uranus', 'uranusDoom', 'uranusPicture', '9');
  						 	 } 
 
 							 	else if (planet.toLowerCase()==='neptune') {  
-          								 planetGo(' Neptune', 'neptuneDoom', '10');
+          								 planetGo(' Neptune', 'neptuneDoom', 'neptunePicture', '10');
         						 	}
 									else if (planet.toLowerCase()==='sun') {             
 	   							   		checkPlanetNumber();
@@ -42,11 +42,12 @@ function travelToPlanet()
 }
         
 
-function planetGo(element, doomFunction, pageNum)
+function planetGo(element, doomFunction, picture, pageNum)
 {
 	var theIndex
 	theIndex=numberOfPlanets.indexOf(element);
 	if (theIndex===-1) {
+		showDiv(picture);
 		nextPage(2, pageNum);
 		window[doomFunction]();
 	}
@@ -171,7 +172,7 @@ function giveLength(divNames, divLength)
 }
 
 
-function CheckAnswer(div, randomQA, element, pageNum)
+function checkAnswer(div, randomQA, element, pageNum)
 {
    	var userAns
    	userAns=document.getElementById(div).value;
