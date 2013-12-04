@@ -1,5 +1,6 @@
 function travelToPlanet()
 {
+	var planet
 	planet=document.getElementById('actionInput').value;
 	
 	if (planet.toLowerCase()==='mercury') {
@@ -55,21 +56,29 @@ function planetGo(element, doomFunction, pageNum)
 }
 
 
+function showDiv(divName)
+{
+	document.getElementById(divName).style.display = 'block';
+}
+
+
 function changeStoryDiv()
 {
-	document.getElementById('storyDiv').style.display = 'block';
-	document.getElementById('pictureDiv').style.display = 'block';
+	showDiv('storyDiv');
+	showDiv('pictureDiv');
+	
 	playerInfo= {
 		teamname: document.getElementById('teamNameInput').value,
 		spaceship: document.getElementById('shipNameInput').value
 		};
+		
 	document.getElementById('storyDiv').innerHTML = 'The year is 3013 and the world is in grave danger. ' + playerInfo.teamname + ', the world as we know it and the entire solar system will be destroyed unless you collect all the pieces of a device that will keep the sun shining. Otherwise the sun will die out and the solar system, along with all its inhabitance, will cease to exist. As ' + playerInfo.teamname + ', you must to go to each planet in the solar system in your spaceship, ' + playerInfo.spaceship + ', and  answer a question about that planet in order to get each piece of the device, and upgrade the ' + playerInfo.spaceship + ', so you can prepare for the final voyage to the sun. Though if your team goes to the sun too early, ' + playerInfo.spaceship + ' will be disintegrated and you fail your mission. Otherwise, ' + playerInfo.teamname + ' is allowed to freely go to each planet in any order, and can retry the questions about each planet. Because of an unexpected chemical imbalance in the fusion reaction that the sun undergoes, it is up to ' + playerInfo.teamname + ' to save the solar system!';
 }
 
 
 function changeSunDiv()
 {
-	document.getElementById('sunDiv').style.display = 'block';
+	showDiv('sunDiv');
 	document.getElementById('sunDiv').innerHTML = 'Now ' + playerInfo.teamname + ' has a choice. Save the solar system as intended, or start civilization over again on another near by solar system that can also sustain life, using the device as an energy source to power the ' + playerInfo.spaceship + ' and get to the new solar system. What will you do?';
 }
 
@@ -101,7 +110,6 @@ function wrong()
 
 function nextPage(curr,next)
 {
-      
 	var currPage, nextPage;
 
 	currPage = document.getElementById('page' + curr);
@@ -109,19 +117,13 @@ function nextPage(curr,next)
       
 	currPage.style.display = 'none';
 	nextPage.style.display = 'block';
-
-}
-
-
-function startScreen()
-{
-	document.getElementById('page0').style.display = 'block';
 }
 
 
 function addPlanet(planName)
 {
 	var nextPlanet
+	
 	planetNumber=numberOfPlanets.length;
 	nextPlanet=(planetNumber + 1);
 	numberOfPlanets[planetNumber]=planName;
@@ -142,7 +144,7 @@ function checkPlanetNumber()
 function saveSolarSystem()
 {
 	nextPage(11,12);
-	document.getElementById('goodChoiceDiv').style.display = 'block';
+	showDiv('goodChoiceDiv');
 	document.getElementById('goodChoiceDiv').innerHTML = 'Having successfully collected all the pieces of the devicew ' + playerInfo.teamname + ' has saved the solar system! The sun is saved and ' + playerInfo.teamname + ', and their ship the ' + playerInfo.spaceship + ', have made history as the saviors of the solar system. Game Over!';
 }
 
@@ -150,7 +152,7 @@ function saveSolarSystem()
 function leaveSolarSystem()
 {
 	nextPage(11,13);
-	document.getElementById('badChoiceDiv').style.display = 'block';
+	showDiv('badChoiceDiv');
 	document.getElementById('badChoiceDiv').innerHTML = 'Leaving behind their previous civilization, ' + playerInfo.teamname + ', with their ship the ' + playerInfo.spaceship + ', start a new civilization as they have imagined it, using what they thought worked best on Earth, their previous home. Game Over!';
 }
 
@@ -161,12 +163,10 @@ function giveLength(divNames, divLength)
 	
 	theLength=numberOfPlanets.length;
 	
-	document.getElementById(divNames).style.display = 'block';
-	
-	document.getElementById(divLength).style.display = 'block';
+	showDiv(divNames);
+	showDiv(divLength);
 	
 	document.getElementById(divNames).innerHTML=numberOfPlanets;
-	
 	document.getElementById(divLength).innerHTML=theLength;
 }
 
@@ -191,7 +191,7 @@ function mercuryDoom()
 	
 	mercRandomQAns=mercAnswers[mercPos];
 	
-	document.getElementById('outputMercury').style.display = 'block';
+	showDiv('outputMercury');
 	
 	document.getElementById('outputMercury').innerHTML=mercRandomQues;	
 }
@@ -235,8 +235,8 @@ function venusDoom()
 	venusRandomQues=venusQuestions[venusPos];
 	
 	venusRandomQAns=venusAnswers[venusPos];
-	
-	document.getElementById('outputVenus').style.display = 'block';
+
+	showDiv('outputVenus');
 	
 	document.getElementById('outputVenus').innerHTML=venusRandomQues;	
 
@@ -280,7 +280,7 @@ function earthDoom()
 	
 	earthRandomQAns=earthAnswers[earthPos];
 	
-	document.getElementById('outputEarth').style.display = 'block';
+	showDiv('outputEarth');
 	
 	document.getElementById('outputEarth').innerHTML=earthRandomQues;
 }
@@ -326,7 +326,7 @@ function marsDoom()
 	
 	marsRandomQAns=marsAnswers[marsPos];
 	
-	document.getElementById('outputMars').style.display = 'block';
+	showDiv('outputMars');
 	
 	document.getElementById('outputMars').innerHTML=marsRandomQues;	
 }
@@ -371,7 +371,7 @@ function jupiterDoom()
 	
 	jupRandomQAns=jupAnswers[jupPos];
 	
-	document.getElementById('outputJupiter').style.display = 'block';
+	showDiv('outputJupiter');
 	
 	document.getElementById('outputJupiter').innerHTML=jupRandomQues;	
 }
@@ -416,7 +416,7 @@ function saturnDoom()
 	
 	satRandomQAns=satAnswers[satPos];
 	
-	document.getElementById('outputSaturn').style.display = 'block';
+	showDiv('outputSaturn');
 	
 	document.getElementById('outputSaturn').innerHTML=satRandomQues;	
 }
@@ -461,7 +461,7 @@ function uranusDoom()
 	
 	uranusRandomQAns=uranusAnswers[uranusPos];
 	
-	document.getElementById('outputUranus').style.display = 'block';
+	showDiv('outputUranus');
 	
 	document.getElementById('outputUranus').innerHTML=uranusRandomQues;
 }
@@ -505,26 +505,26 @@ function neptuneDoom()
 	
 	nepRandomQAns=nepAnswers[nepPos];
 	
-	document.getElementById('outputNeptune').style.display = 'block';
+	showDiv('outputNeptune');
 	
 	document.getElementById('outputNeptune').innerHTML=nepRandomQues;
 }
 
 
-function neptuneCheckAnswer()
+function checkAnswer(inputBox, randomQAns, element, pageNum)
 {
-   	var userAns
-   	userAns=document.getElementById('answerInputNeptune').value;
+	var userAns
+   	userAns=document.getElementById(inputBox).value;
 	
-		if (userAns===nepRandomQAns) { 
-			 correct();
-			addPlanet(' Neptune');
-			nextPage(10,2);
+		if (userAns===randomQAns) { 
+			correct();
+			addPlanet(element);
+			nextPage(pageNum,2);
 		}
 		else if (userAns==='') {
 			alert('Please type in your answer!');
 		}
 		else {
 			wrong();
-		}
+		}	
 }
