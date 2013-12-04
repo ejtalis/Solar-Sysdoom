@@ -58,15 +58,15 @@ function planetGo(element, doomFunction, picture, pageNum)
 
 function toHelpPage(pageNum)
 {
-	pageNum=backToPage;
-	nextPage(backToPage,14);
+	//pageNum=backToPage;
+	nextPage(pageNum,14);
 }
 
 
-function fromHelpPage()
-{
-	nextPage(14,backToPage);
-}
+//function fromHelpPage()
+//{
+//	nextPage(14,backToPage);
+//}
 
 
 function showDiv(divName)
