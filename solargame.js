@@ -57,7 +57,7 @@ function planetGo(element, doomFunction, pageNum)
 	var theIndex=numberOfPlanets.indexOf(element);
 	if (theIndex===-1) {
 		nextPage(2, pageNum);
-		doomFunction();
+		window[doomFunction]();
 	}
 	else {
 		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
