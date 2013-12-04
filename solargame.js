@@ -171,6 +171,25 @@ function giveLength(divNames, divLength)
 }
 
 
+function CheckAnswer(div, randomQA, element, pageNum)
+{
+   	var userAns
+   	userAns=document.getElementById(div).value;
+	
+		if (userAns===randomQA) { 
+			 correct();
+			addPlanet(element);
+			nextPage(pageNum,2);
+		}
+		else if (userAns==='') {
+			alert('Please type in your answer!');
+		}
+		else {
+			wrong();
+		}
+}
+
+
 function mercuryDoom()
 {
 	var mercQuestions, mercAnswers, mercPos, mercRandomQues
@@ -194,25 +213,6 @@ function mercuryDoom()
 	showDiv('outputMercury');
 	
 	document.getElementById('outputMercury').innerHTML=mercRandomQues;	
-}
-
-
-function mercuryCheckAnswer()
-{
-   	var userAns
-   	userAns=document.getElementById('answerInputMercury').value;
-	
-		if (userAns===mercRandomQAns) { 
-			 correct();
-			addPlanet(' Mercury');
-			nextPage(3,2);
-		}
-		else if (userAns==='') {
-			alert('Please type in your answer!');
-		}
-		else {
-			wrong();
-		}
 }
 
 
@@ -242,23 +242,6 @@ function venusDoom()
 
 }
 
-function venusCheckAnswer()
-{
-   	var userAns
-   	userAns=document.getElementById('answerInputVenus').value;
-	
-		if (userAns===venusRandomQAns) { 
-			 correct();
-			addPlanet(' Venus');
-			nextPage(4,2);
-		}
-		else if (userAns==='') {
-			alert('Please type in your answer!');
-		}
-		else {
-			wrong();
-		}
-}
 
 function earthDoom()
 {	
@@ -283,26 +266,6 @@ function earthDoom()
 	showDiv('outputEarth');
 	
 	document.getElementById('outputEarth').innerHTML=earthRandomQues;
-}
-
-
-		
-function earthCheckAnswer()
-{
-   	var userAns
-   	userAns=document.getElementById('answerInputEarth').value;
-	
-		if (userAns===earthRandomQAns) { 
-			 correct();
-			addPlanet(' Earth');
-			nextPage(5,2);
-		}
-		else if (userAns==='') {
-			alert('Please type in your answer!');
-		}
-		else {
-			wrong();
-		}
 }
 
 
@@ -332,25 +295,6 @@ function marsDoom()
 }
 
 
-function marsCheckAnswer()
-{
-   	var userAns
-   	userAns=document.getElementById('answerInputMars').value;
-	
-		if (userAns===marsRandomQAns) { 
-			 correct();
-			addPlanet(' Mars');
-			nextPage(6,2);
-		}
-		else if (userAns==='') {
-			alert('Please type in your answer!');
-		}
-		else {
-			wrong();
-		}
-}
-
-
 function jupiterDoom()
 {	
 	var jupQuestions, jupAnswers, jupPos, jupRandomQues
@@ -374,25 +318,6 @@ function jupiterDoom()
 	showDiv('outputJupiter');
 	
 	document.getElementById('outputJupiter').innerHTML=jupRandomQues;	
-}
-
-
-function jupiterCheckAnswer()
-{
-   	var userAns
-   	userAns=document.getElementById('answerInputJupiter').value;
-	
-		if (userAns===jupRandomQAns) { 
-			 correct();
-			addPlanet(' Jupiter');
-			nextPage(7,2);
-		}
-		else if (userAns==='') {
-			alert('Please type in your answer!');
-		}
-		else {
-			wrong();
-		}
 }
 
 
@@ -422,25 +347,6 @@ function saturnDoom()
 }
 
 
-function saturnCheckAnswer()
-{
-   	var userAns
-   	userAns=document.getElementById('answerInputSaturn').value;
-	
-		if (userAns===satRandomQAns) { 
-			 correct();
-			addPlanet(' Saturn');
-			nextPage(8,2);
-		}
-		else if (userAns==='') {
-			alert('Please type in your answer!');
-		}
-		else {
-			wrong();
-		}
-}
-
-
 function uranusDoom()
 {
 	var uranusQuestions, uranusAnswers, uranusPos, uranusRandomQues
@@ -464,24 +370,6 @@ function uranusDoom()
 	showDiv('outputUranus');
 	
 	document.getElementById('outputUranus').innerHTML=uranusRandomQues;
-}
-
-function uranusCheckAnswer()
-{
-   	var userAns
-   	userAns=document.getElementById('answerInputUranus').value;
-	
-		if (userAns===uranusRandomQAns) { 
-			 correct();
-			addPlanet(' Uranus');
-			nextPage(9,2);
-		}
-		else if (userAns==='') {
-			alert('Please type in your answer!');
-		}
-		else {
-			wrong();
-		}
 }
 
 
@@ -508,22 +396,4 @@ function neptuneDoom()
 	showDiv('outputNeptune');
 	
 	document.getElementById('outputNeptune').innerHTML=nepRandomQues;
-}
-
-function neptuneCheckAnswer(div, randomQA, element, pageNum)
-{
-   	var userAns
-   	userAns=document.getElementById(div).value;
-	
-		if (userAns===randomQA) { 
-			 correct();
-			addPlanet(element);
-			nextPage(pageNum,2);
-		}
-		else if (userAns==='') {
-			alert('Please type in your answer!');
-		}
-		else {
-			wrong();
-		}
 }
