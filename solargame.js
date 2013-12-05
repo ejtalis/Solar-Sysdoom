@@ -4,11 +4,11 @@ function travelToPlanet()
 	planet=document.getElementById('actionInput').value;
 	
 	if (planet.toLowerCase()==='mercury') {
- 		 planetGo(' Mercury', 'mercuryDoom', 'mercuryPicture', '3');
+ 		 planetGo(' Mercury', mercuryDoom(), 'mercuryPicture', '3');
  	 }   
 
 		else if (planet.toLowerCase()==='venus') {
-           		planetGo(' Venus', 'venusDoom', 'venusPicture', '4');  
+           		planetGo(' Venus', venusDoom(), 'venusPicture', '4');  
 		}
 	 
 	 		else if (planet.toLowerCase()==='earth') {         
@@ -48,7 +48,7 @@ function planetGo(element, doomFunction, picture, pageNum)
 	if (theIndex===-1) {
 		showDiv(picture);
 		nextPage(2, pageNum);
-		window[doomFunction]();
+		doomFunction;
 	}
 	else {
 		alert('You have already been to this planet. Please enter another planet name or, if you have collected all the pieces of the device, proceed to the sun.');
