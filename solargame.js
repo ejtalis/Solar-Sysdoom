@@ -12,25 +12,25 @@ function travelToPlanet()
 		}
 	 
 	 		else if (planet.toLowerCase()==='earth') {         
-   	   			planetGo(' Earth', 'earthDoom', 'earthPicture', '5');
+   	   			planetGo(' Earth', earthDoom(), 'earthPicture', '5');
  			}
 
   			 	else if (planet.toLowerCase()==='mars') {
-					planetGo(' Mars', 'marsDoom', 'marsPicture', '6');
+					planetGo(' Mars', marsDoom(), 'marsPicture', '6');
 			 	}
 
 				 	else if (planet.toLowerCase()==='jupiter') {  
-          					 planetGo(' Jupiter', 'jupiterDoom', 'jupiterPicture', '7');
+          					 planetGo(' Jupiter', jupiterDoom(), 'jupiterPicture', '7');
   				 	}
 	 					else if (planet.toLowerCase()==='saturn') {
-           						planetGo(' Saturn', 'saturnDoom', 'saturnPicture', '8');
+           						planetGo(' Saturn', saturnDoom(), 'saturnPicture', '8');
 						}
 							 else if (planet.toLowerCase()==='uranus') {   
-   								planetGo(' Uranus', 'uranusDoom', 'uranusPicture', '9');
+   								planetGo(' Uranus', uranusDoom(), 'uranusPicture', '9');
  						 	 } 
 
 							 	else if (planet.toLowerCase()==='neptune') {  
-          								 planetGo(' Neptune', 'neptuneDoom', 'neptunePicture', '10');
+          								 planetGo(' Neptune', neptuneDoom(), 'neptunePicture', '10');
         						 	}
 									else if (planet.toLowerCase()==='sun') {             
 	   							   		checkPlanetNumber();
